@@ -1,0 +1,5277 @@
+{
+ "oracle": {
+  "scorer": null,
+  "rq1": {
+   "D0 per-request (limit 0.6)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D_session per-session": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D1 per-account": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D_traj per-account trajectory (30 d)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.6908212560386473,
+     "benign_person_fp": 0.8826530612244898,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7710843373493976,
+      "typical": 0.963855421686747
+     },
+     "victim_benign_blocked": 0.6954022988505747
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.6908212560386473,
+     "benign_person_fp": 0.8826530612244898,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7710843373493976,
+      "typical": 0.963855421686747
+     },
+     "victim_benign_blocked": 0.6954022988505747
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.6908212560386473,
+     "benign_person_fp": 0.8826530612244898,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7710843373493976,
+      "typical": 0.963855421686747
+     },
+     "victim_benign_blocked": 0.6954022988505747
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.6908212560386473,
+     "benign_person_fp": 0.8826530612244898,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7710843373493976,
+      "typical": 0.963855421686747
+     },
+     "victim_benign_blocked": 0.6954022988505747
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.6908212560386473,
+     "benign_person_fp": 0.8826530612244898,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7710843373493976,
+      "typical": 0.963855421686747
+     },
+     "victim_benign_blocked": 0.6954022988505747
+    }
+   },
+   "D2 per-org": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.937843137254902,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.888888888888889,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.06666666666666667,
+     "detected": 0.06666666666666667,
+     "leaked_share": 0.9647058823529412,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    }
+   },
+   "D3 federated (or)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7486805555555556,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8622222222222222,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6222222222222223,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.5858333333333334,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    }
+   },
+   "D3c centralised (or)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7486805555555556,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8622222222222222,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6222222222222223,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.5858333333333334,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    }
+   }
+  },
+  "rq1_sweep": {
+   "D1 per-account": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.7333333333333333,
+     "detected": 0.7333333333333333,
+     "leaked_share": 0.7258015677133325,
+     "benign_event_fp": 0.024154589371980676,
+     "benign_person_fp": 0.0663265306122449,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.022988505747126436
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.5166666666666667,
+     "detected": 0.5166666666666667,
+     "leaked_share": 0.811881255998903,
+     "benign_event_fp": 0.01288244766505636,
+     "benign_person_fp": 0.030612244897959183,
+     "fp_by_kind": {
+      "life-event": 0.16666666666666666,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.011494252873563218
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.31666666666666665,
+     "detected": 0.31666666666666665,
+     "leaked_share": 0.9208547008547009,
+     "benign_event_fp": 0.001610305958132045,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.23333333333333334,
+     "detected": 0.23333333333333334,
+     "leaked_share": 0.9397435897435897,
+     "benign_event_fp": 0.001610305958132045,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D2 per-org": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.5550199772993891,
+     "benign_event_fp": 0.18357487922705315,
+     "benign_person_fp": 0.30612244897959184,
+     "fp_by_kind": {
+      "life-event": 0.8333333333333334,
+      "quiet": 0.07228915662650602,
+      "typical": 0.3493975903614458
+     },
+     "victim_benign_blocked": 0.40229885057471265
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.7833333333333333,
+     "detected": 0.7833333333333333,
+     "leaked_share": 0.6948755370446548,
+     "benign_event_fp": 0.0998389694041868,
+     "benign_person_fp": 0.17857142857142858,
+     "fp_by_kind": {
+      "life-event": 0.6,
+      "quiet": 0.04819277108433735,
+      "typical": 0.1566265060240964
+     },
+     "victim_benign_blocked": 0.27011494252873564
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.5333333333333333,
+     "detected": 0.5333333333333333,
+     "leaked_share": 0.8586978381096029,
+     "benign_event_fp": 0.033816425120772944,
+     "benign_person_fp": 0.061224489795918366,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.060240963855421686
+     },
+     "victim_benign_blocked": 0.1724137931034483
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.899808949220714,
+     "benign_event_fp": 0.02254428341384863,
+     "benign_person_fp": 0.03571428571428571,
+     "fp_by_kind": {
+      "life-event": 0.16666666666666666,
+      "quiet": 0.0,
+      "typical": 0.024096385542168676
+     },
+     "victim_benign_blocked": 0.1206896551724138
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.937843137254902,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.937843137254902,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D3 or": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.34246467312643786,
+     "benign_event_fp": 0.32689210950080516,
+     "benign_person_fp": 0.4642857142857143,
+     "fp_by_kind": {
+      "life-event": 0.9,
+      "quiet": 0.10843373493975904,
+      "typical": 0.6626506024096386
+     },
+     "victim_benign_blocked": 0.6781609195402298
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.4606394259335436,
+     "benign_event_fp": 0.20933977455716588,
+     "benign_person_fp": 0.32653061224489793,
+     "fp_by_kind": {
+      "life-event": 0.7666666666666667,
+      "quiet": 0.07228915662650602,
+      "typical": 0.42168674698795183
+     },
+     "victim_benign_blocked": 0.6436781609195402
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9166666666666666,
+     "detected": 0.9166666666666666,
+     "leaked_share": 0.5976275766716943,
+     "benign_event_fp": 0.1143317230273752,
+     "benign_person_fp": 0.18877551020408162,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.0,
+      "typical": 0.21686746987951808
+     },
+     "victim_benign_blocked": 0.6091954022988506
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.7833333333333333,
+     "detected": 0.7833333333333333,
+     "leaked_share": 0.6418636877828054,
+     "benign_event_fp": 0.07890499194847021,
+     "benign_person_fp": 0.12244897959183673,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.0,
+      "typical": 0.13253012048192772
+     },
+     "victim_benign_blocked": 0.5517241379310345
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7120833333333334,
+     "benign_event_fp": 0.043478260869565216,
+     "benign_person_fp": 0.061224489795918366,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.47701149425287354
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7486805555555556,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5,
+     "detected": 0.5,
+     "leaked_share": 0.8228472222222223,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3333333333333333
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.4166666666666667,
+     "detected": 0.4166666666666667,
+     "leaked_share": 0.8611437908496732,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3160919540229885
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.8891830065359477,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.25862068965517243
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.38333333333333336,
+     "detected": 0.38333333333333336,
+     "leaked_share": 0.9251960784313725,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.19540229885057472
+    }
+   },
+   "D3 or, 90-day window": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.34246467312643786,
+     "benign_event_fp": 0.3027375201288245,
+     "benign_person_fp": 0.4387755102040816,
+     "fp_by_kind": {
+      "life-event": 0.9,
+      "quiet": 0.0963855421686747,
+      "typical": 0.6144578313253012
+     },
+     "victim_benign_blocked": 0.6091954022988506
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.4606394259335436,
+     "benign_event_fp": 0.19001610305958133,
+     "benign_person_fp": 0.29081632653061223,
+     "fp_by_kind": {
+      "life-event": 0.7666666666666667,
+      "quiet": 0.060240963855421686,
+      "typical": 0.3493975903614458
+     },
+     "victim_benign_blocked": 0.5172413793103449
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9166666666666666,
+     "detected": 0.9166666666666666,
+     "leaked_share": 0.5976275766716943,
+     "benign_event_fp": 0.10144927536231885,
+     "benign_person_fp": 0.1683673469387755,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.0,
+      "typical": 0.1686746987951807
+     },
+     "victim_benign_blocked": 0.4827586206896552
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.7833333333333333,
+     "detected": 0.7833333333333333,
+     "leaked_share": 0.6418636877828054,
+     "benign_event_fp": 0.07085346215780998,
+     "benign_person_fp": 0.11224489795918367,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.0,
+      "typical": 0.10843373493975904
+     },
+     "victim_benign_blocked": 0.42528735632183906
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7120833333333334,
+     "benign_event_fp": 0.040257648953301126,
+     "benign_person_fp": 0.05612244897959184,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.024096385542168676
+     },
+     "victim_benign_blocked": 0.3735632183908046
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7486805555555556,
+     "benign_event_fp": 0.033816425120772944,
+     "benign_person_fp": 0.04591836734693878,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.024096385542168676
+     },
+     "victim_benign_blocked": 0.3563218390804598
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5,
+     "detected": 0.5,
+     "leaked_share": 0.8228472222222223,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.27011494252873564
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.8686437908496732,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.2413793103448276
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.38333333333333336,
+     "detected": 0.38333333333333336,
+     "leaked_share": 0.8966830065359478,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.19540229885057472
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.35,
+     "detected": 0.35,
+     "leaked_share": 0.9310294117647059,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.13793103448275862
+    }
+   },
+   "D3 or, 30-day window": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.4053935946950653,
+     "benign_event_fp": 0.2109500805152979,
+     "benign_person_fp": 0.2857142857142857,
+     "fp_by_kind": {
+      "life-event": 0.9,
+      "quiet": 0.04819277108433735,
+      "typical": 0.30120481927710846
+     },
+     "victim_benign_blocked": 0.39655172413793105
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.9166666666666666,
+     "detected": 0.9166666666666666,
+     "leaked_share": 0.5371794586132822,
+     "benign_event_fp": 0.1529790660225443,
+     "benign_person_fp": 0.21428571428571427,
+     "fp_by_kind": {
+      "life-event": 0.7666666666666667,
+      "quiet": 0.03614457831325301,
+      "typical": 0.1927710843373494
+     },
+     "victim_benign_blocked": 0.2988505747126437
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.8166666666666667,
+     "detected": 0.8166666666666667,
+     "leaked_share": 0.7004584590246355,
+     "benign_event_fp": 0.08695652173913043,
+     "benign_person_fp": 0.1326530612244898,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.0,
+      "typical": 0.08433734939759036
+     },
+     "victim_benign_blocked": 0.21264367816091953
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.6333333333333333,
+     "detected": 0.6333333333333333,
+     "leaked_share": 0.75302790346908,
+     "benign_event_fp": 0.0644122383252818,
+     "benign_person_fp": 0.09693877551020408,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.15517241379310345
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.5166666666666667,
+     "detected": 0.5166666666666667,
+     "leaked_share": 0.8177083333333334,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.11494252873563218
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.5,
+     "detected": 0.5,
+     "leaked_share": 0.8388888888888889,
+     "benign_event_fp": 0.028985507246376812,
+     "benign_person_fp": 0.03571428571428571,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.09770114942528736
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.3,
+     "detected": 0.3,
+     "leaked_share": 0.9053104575163399,
+     "benign_event_fp": 0.00644122383252818,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.06896551724137931
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.9363888888888889,
+     "benign_event_fp": 0.00644122383252818,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.05747126436781609
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.2,
+     "detected": 0.2,
+     "leaked_share": 0.9497222222222222,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.022988505747126436
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.18333333333333332,
+     "detected": 0.18333333333333332,
+     "leaked_share": 0.97,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.005747126436781609
+    }
+   },
+   "D3 or, not sticky": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.40179222465987174,
+     "benign_event_fp": 0.24798711755233493,
+     "benign_person_fp": 0.4642857142857143,
+     "fp_by_kind": {
+      "life-event": 0.9,
+      "quiet": 0.10843373493975904,
+      "typical": 0.6626506024096386
+     },
+     "victim_benign_blocked": 0.47701149425287354
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.5251844234197176,
+     "benign_event_fp": 0.15136876006441224,
+     "benign_person_fp": 0.32653061224489793,
+     "fp_by_kind": {
+      "life-event": 0.7666666666666667,
+      "quiet": 0.07228915662650602,
+      "typical": 0.42168674698795183
+     },
+     "victim_benign_blocked": 0.39080459770114945
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9166666666666666,
+     "detected": 0.9166666666666666,
+     "leaked_share": 0.6569698969331322,
+     "benign_event_fp": 0.07729468599033816,
+     "benign_person_fp": 0.18877551020408162,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.0,
+      "typical": 0.21686746987951808
+     },
+     "victim_benign_blocked": 0.3103448275862069
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.7833333333333333,
+     "detected": 0.7833333333333333,
+     "leaked_share": 0.7115532302664656,
+     "benign_event_fp": 0.05636070853462158,
+     "benign_person_fp": 0.12244897959183673,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.0,
+      "typical": 0.13253012048192772
+     },
+     "victim_benign_blocked": 0.28160919540229884
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7747058823529412,
+     "benign_event_fp": 0.02576489533011272,
+     "benign_person_fp": 0.061224489795918366,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.20689655172413793
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7872753267973857,
+     "benign_event_fp": 0.020933977455716585,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.20114942528735633
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5,
+     "detected": 0.5,
+     "leaked_share": 0.8586805555555556,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.1781609195402299
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.4166666666666667,
+     "detected": 0.4166666666666667,
+     "leaked_share": 0.9069771241830066,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.13218390804597702
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.9158986928104575,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.08620689655172414
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.38333333333333336,
+     "detected": 0.38333333333333336,
+     "leaked_share": 0.9357843137254902,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.04597701149425287
+    }
+   }
+  },
+  "rq2": {
+   "or": {
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9166666666666666,
+     "detected": 0.9166666666666666,
+     "leaked_share": 0.5976275766716943,
+     "benign_event_fp": 0.1143317230273752,
+     "benign_person_fp": 0.18877551020408162,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.0,
+      "typical": 0.21686746987951808
+     },
+     "victim_benign_blocked": 0.6091954022988506
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7120833333333334,
+     "benign_event_fp": 0.043478260869565216,
+     "benign_person_fp": 0.061224489795918366,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.47701149425287354
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7486805555555556,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5,
+     "detected": 0.5,
+     "leaked_share": 0.8228472222222223,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3333333333333333
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.8891830065359477,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.25862068965517243
+    },
+    "1.0": {
+     "campaigns": 60,
+     "prevented": 0.38333333333333336,
+     "detected": 0.38333333333333336,
+     "leaked_share": 0.9251960784313725,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.19540229885057472
+    },
+    "1.2": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "max": {
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9166666666666666,
+     "detected": 0.9166666666666666,
+     "leaked_share": 0.5976275766716943,
+     "benign_event_fp": 0.1143317230273752,
+     "benign_person_fp": 0.18877551020408162,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.0,
+      "typical": 0.21686746987951808
+     },
+     "victim_benign_blocked": 0.6091954022988506
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7120833333333334,
+     "benign_event_fp": 0.043478260869565216,
+     "benign_person_fp": 0.061224489795918366,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.47701149425287354
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7486805555555556,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5,
+     "detected": 0.5,
+     "leaked_share": 0.8228472222222223,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3333333333333333
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.8891830065359477,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.25862068965517243
+    },
+    "1.0": {
+     "campaigns": 60,
+     "prevented": 0.38333333333333336,
+     "detected": 0.38333333333333336,
+     "leaked_share": 0.9251960784313725,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.19540229885057472
+    },
+    "1.2": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "sum": {
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9333333333333333,
+     "detected": 0.9333333333333333,
+     "leaked_share": 0.531381947301065,
+     "benign_event_fp": 0.1723027375201288,
+     "benign_person_fp": 0.27040816326530615,
+     "fp_by_kind": {
+      "life-event": 0.8,
+      "quiet": 0.03614457831325301,
+      "typical": 0.3132530120481928
+     },
+     "victim_benign_blocked": 0.6494252873563219
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.7333333333333333,
+     "detected": 0.7333333333333333,
+     "leaked_share": 0.631073717948718,
+     "benign_event_fp": 0.10144927536231885,
+     "benign_person_fp": 0.15306122448979592,
+     "fp_by_kind": {
+      "life-event": 0.6666666666666666,
+      "quiet": 0.0,
+      "typical": 0.12048192771084337
+     },
+     "victim_benign_blocked": 0.5862068965517241
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.7333333333333333,
+     "detected": 0.7333333333333333,
+     "leaked_share": 0.6472542735042736,
+     "benign_event_fp": 0.08373590982286634,
+     "benign_person_fp": 0.1377551020408163,
+     "fp_by_kind": {
+      "life-event": 0.6,
+      "quiet": 0.0,
+      "typical": 0.10843373493975904
+     },
+     "victim_benign_blocked": 0.5632183908045977
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.6,
+     "detected": 0.6,
+     "leaked_share": 0.7228685897435898,
+     "benign_event_fp": 0.061191626409017714,
+     "benign_person_fp": 0.10204081632653061,
+     "fp_by_kind": {
+      "life-event": 0.5,
+      "quiet": 0.0,
+      "typical": 0.060240963855421686
+     },
+     "victim_benign_blocked": 0.5459770114942529
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.55,
+     "detected": 0.55,
+     "leaked_share": 0.773654474610357,
+     "benign_event_fp": 0.02254428341384863,
+     "benign_person_fp": 0.04081632653061224,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.46551724137931033
+    },
+    "1.0": {
+     "campaigns": 60,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.831842320261438,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.025510204081632654,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.367816091954023
+    },
+    "1.2": {
+     "campaigns": 60,
+     "prevented": 0.35,
+     "detected": 0.35,
+     "leaked_share": 0.91046977124183,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.25287356321839083
+    }
+   }
+  }
+ },
+ "qwen/qwen3-4b": {
+  "scorer": {
+   "events": 1245,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.785140562248996,
+     "recall": 0.9775,
+     "f1": 0.8708240534521158,
+     "support": 400
+    },
+    "actor:benign": {
+     "precision": 0.6505376344086021,
+     "recall": 1.0,
+     "f1": 0.7882736156351792,
+     "support": 847
+    },
+    "all": {
+     "precision": 0.6877777777777778,
+     "recall": 0.9927826784282278,
+     "f1": 0.8126025598949786,
+     "support": 1247
+    },
+    "all excl. name": {
+     "precision": 0.9055745164960182,
+     "recall": 1.0,
+     "f1": 0.9504477611940298,
+     "support": 796
+    },
+    "injection": {
+     "precision": 0.9166666666666666,
+     "recall": 0.55,
+     "f1": 0.6874999999999999,
+     "support": 20
+    },
+    "name only": {
+     "precision": 0.4799131378935939,
+     "recall": 0.9800443458980045,
+     "f1": 0.6443148688046647,
+     "support": 451
+    },
+    "style:direct": {
+     "precision": 0.6531914893617021,
+     "recall": 0.9935275080906149,
+     "f1": 0.7881899871630295,
+     "support": 618
+    },
+    "style:inferable": {
+     "precision": 0.7677165354330708,
+     "recall": 0.9948979591836735,
+     "f1": 0.8666666666666666,
+     "support": 196
+    },
+    "style:none": {
+     "precision": NaN,
+     "recall": NaN,
+     "f1": NaN,
+     "support": 0
+    },
+    "style:paraphrase": {
+     "precision": 0.7079207920792079,
+     "recall": 0.9907621247113164,
+     "f1": 0.8257940327237728,
+     "support": 433
+    }
+   },
+   "linkage": 0.9783315276273022,
+   "stage1_exit": 0.121285140562249,
+   "errors": 0,
+   "latency_mean": 6.321444241316271,
+   "latency_p95": 13.6
+  },
+  "rq1": {
+   "D0 per-request (limit 0.6)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.05,
+     "detected": 0.05,
+     "leaked_share": 0.9890384615384615,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.06666666666666667,
+     "detected": 0.06666666666666667,
+     "leaked_share": 0.9794871794871794,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.06666666666666667,
+     "detected": 0.06666666666666667,
+     "leaked_share": 0.9866666666666667,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.06666666666666667,
+     "detected": 0.06666666666666667,
+     "leaked_share": 0.99,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D_session per-session": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D1 per-account": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D_traj per-account trajectory (30 d)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.8534621578099839,
+     "benign_person_fp": 0.9591836734693877,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "quiet": 0.9036144578313253,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8103448275862069
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.8534621578099839,
+     "benign_person_fp": 0.9591836734693877,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "quiet": 0.9036144578313253,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8103448275862069
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.8534621578099839,
+     "benign_person_fp": 0.9591836734693877,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "quiet": 0.9036144578313253,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8103448275862069
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.8534621578099839,
+     "benign_person_fp": 0.9591836734693877,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "quiet": 0.9036144578313253,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8103448275862069
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.8534621578099839,
+     "benign_person_fp": 0.9591836734693877,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "quiet": 0.9036144578313253,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8103448275862069
+    }
+   },
+   "D2 per-org": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.9383660130718955,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.3333333333333333,
+     "detected": 0.3333333333333333,
+     "leaked_share": 0.9066666666666667,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9490196078431372,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    }
+   },
+   "D3 federated (or)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.733108660130719,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8577777777777778,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6122222222222223,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.5379901960784315,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    }
+   },
+   "D3c centralised (or)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.733108660130719,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8577777777777778,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6122222222222223,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.5379901960784315,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    }
+   }
+  },
+  "rq1_sweep": {
+   "D1 per-account": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.7666666666666667,
+     "detected": 0.7666666666666667,
+     "leaked_share": 0.6618290941085059,
+     "benign_event_fp": 0.07407407407407407,
+     "benign_person_fp": 0.1989795918367347,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.04819277108433735,
+      "typical": 0.2891566265060241
+     },
+     "victim_benign_blocked": 0.034482758620689655
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.5833333333333334,
+     "detected": 0.5833333333333334,
+     "leaked_share": 0.7815733123086065,
+     "benign_event_fp": 0.02576489533011272,
+     "benign_person_fp": 0.07142857142857142,
+     "fp_by_kind": {
+      "life-event": 0.2,
+      "quiet": 0.012048192771084338,
+      "typical": 0.08433734939759036
+     },
+     "victim_benign_blocked": 0.022988505747126436
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.31666666666666665,
+     "detected": 0.31666666666666665,
+     "leaked_share": 0.8879700854700855,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.025510204081632654,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.25,
+     "detected": 0.25,
+     "leaked_share": 0.9107478632478633,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.025510204081632654,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D2 per-org": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.48047560826972596,
+     "benign_event_fp": 0.27375201288244766,
+     "benign_person_fp": 0.44387755102040816,
+     "fp_by_kind": {
+      "life-event": 0.9333333333333333,
+      "quiet": 0.13253012048192772,
+      "typical": 0.5783132530120482
+     },
+     "victim_benign_blocked": 0.4827586206896552
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.8333333333333334,
+     "detected": 0.8333333333333334,
+     "leaked_share": 0.6631787044654692,
+     "benign_event_fp": 0.15136876006441224,
+     "benign_person_fp": 0.27040816326530615,
+     "fp_by_kind": {
+      "life-event": 0.7666666666666667,
+      "quiet": 0.08433734939759036,
+      "typical": 0.27710843373493976
+     },
+     "victim_benign_blocked": 0.3390804597701149
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.5666666666666667,
+     "detected": 0.5666666666666667,
+     "leaked_share": 0.8096367521367521,
+     "benign_event_fp": 0.05314009661835749,
+     "benign_person_fp": 0.10714285714285714,
+     "fp_by_kind": {
+      "life-event": 0.3333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.12048192771084337
+     },
+     "victim_benign_blocked": 0.20114942528735633
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.8674145299145299,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.07653061224489796,
+     "fp_by_kind": {
+      "life-event": 0.26666666666666666,
+      "quiet": 0.012048192771084338,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.14367816091954022
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.9383660130718955,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.9383660130718955,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D3 or": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.3110167093255329,
+     "benign_event_fp": 0.4476650563607085,
+     "benign_person_fp": 0.5561224489795918,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.2289156626506024,
+      "typical": 0.7349397590361446
+     },
+     "victim_benign_blocked": 0.7701149425287356
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.4355929201517437,
+     "benign_event_fp": 0.30917874396135264,
+     "benign_person_fp": 0.42346938775510207,
+     "fp_by_kind": {
+      "life-event": 0.9,
+      "quiet": 0.1566265060240964,
+      "typical": 0.5180722891566265
+     },
+     "victim_benign_blocked": 0.7413793103448276
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.5481579939668175,
+     "benign_event_fp": 0.17713365539452497,
+     "benign_person_fp": 0.2653061224489796,
+     "fp_by_kind": {
+      "life-event": 0.7666666666666667,
+      "quiet": 0.024096385542168676,
+      "typical": 0.3253012048192771
+     },
+     "victim_benign_blocked": 0.6724137931034483
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.7833333333333333,
+     "detected": 0.7833333333333333,
+     "leaked_share": 0.6101718828557064,
+     "benign_event_fp": 0.14009661835748793,
+     "benign_person_fp": 0.19387755102040816,
+     "fp_by_kind": {
+      "life-event": 0.5666666666666667,
+      "quiet": 0.012048192771084338,
+      "typical": 0.24096385542168675
+     },
+     "victim_benign_blocked": 0.603448275862069
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7056781045751634,
+     "benign_event_fp": 0.07568438003220612,
+     "benign_person_fp": 0.11224489795918367,
+     "fp_by_kind": {
+      "life-event": 0.4666666666666667,
+      "quiet": 0.0,
+      "typical": 0.0963855421686747
+     },
+     "victim_benign_blocked": 0.5057471264367817
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.733108660130719,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5166666666666667,
+     "detected": 0.5166666666666667,
+     "leaked_share": 0.8028308823529412,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3735632183908046
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.43333333333333335,
+     "detected": 0.43333333333333335,
+     "leaked_share": 0.8438725490196078,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3333333333333333
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.8752450980392157,
+     "benign_event_fp": 0.01288244766505636,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.25862068965517243
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.9104248366013072,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.20689655172413793
+    }
+   },
+   "D3 or, 90-day window": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.3110167093255329,
+     "benign_event_fp": 0.41223832528180354,
+     "benign_person_fp": 0.5306122448979592,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.20481927710843373,
+      "typical": 0.6987951807228916
+     },
+     "victim_benign_blocked": 0.6781609195402298
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.4355929201517437,
+     "benign_event_fp": 0.28019323671497587,
+     "benign_person_fp": 0.3826530612244898,
+     "fp_by_kind": {
+      "life-event": 0.8666666666666667,
+      "quiet": 0.13253012048192772,
+      "typical": 0.4578313253012048
+     },
+     "victim_benign_blocked": 0.6379310344827587
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.5481579939668175,
+     "benign_event_fp": 0.15458937198067632,
+     "benign_person_fp": 0.22959183673469388,
+     "fp_by_kind": {
+      "life-event": 0.7333333333333333,
+      "quiet": 0.024096385542168676,
+      "typical": 0.25301204819277107
+     },
+     "victim_benign_blocked": 0.5459770114942529
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.7833333333333333,
+     "detected": 0.7833333333333333,
+     "leaked_share": 0.6101718828557064,
+     "benign_event_fp": 0.12399355877616747,
+     "benign_person_fp": 0.17346938775510204,
+     "fp_by_kind": {
+      "life-event": 0.5666666666666667,
+      "quiet": 0.012048192771084338,
+      "typical": 0.1927710843373494
+     },
+     "victim_benign_blocked": 0.47701149425287354
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7056781045751634,
+     "benign_event_fp": 0.07085346215780998,
+     "benign_person_fp": 0.10204081632653061,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.0,
+      "typical": 0.08433734939759036
+     },
+     "victim_benign_blocked": 0.39080459770114945
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.733108660130719,
+     "benign_event_fp": 0.05314009661835749,
+     "benign_person_fp": 0.07653061224489796,
+     "fp_by_kind": {
+      "life-event": 0.3333333333333333,
+      "quiet": 0.0,
+      "typical": 0.060240963855421686
+     },
+     "victim_benign_blocked": 0.39655172413793105
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5166666666666667,
+     "detected": 0.5166666666666667,
+     "leaked_share": 0.8028308823529412,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3160919540229885
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.4166666666666667,
+     "detected": 0.4166666666666667,
+     "leaked_share": 0.8480392156862745,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.27011494252873564
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.38333333333333336,
+     "detected": 0.38333333333333336,
+     "leaked_share": 0.8794117647058823,
+     "benign_event_fp": 0.01288244766505636,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.20114942528735633
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.35,
+     "detected": 0.35,
+     "leaked_share": 0.9179248366013072,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.14942528735632185
+    }
+   },
+   "D3 or, 30-day window": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.36616785311638256,
+     "benign_event_fp": 0.32689210950080516,
+     "benign_person_fp": 0.41836734693877553,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.13253012048192772,
+      "typical": 0.5060240963855421
+     },
+     "victim_benign_blocked": 0.47701149425287354
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.4995798482563189,
+     "benign_event_fp": 0.2222222222222222,
+     "benign_person_fp": 0.30612244897959184,
+     "fp_by_kind": {
+      "life-event": 0.8666666666666667,
+      "quiet": 0.0963855421686747,
+      "typical": 0.3132530120481928
+     },
+     "victim_benign_blocked": 0.3793103448275862
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.8166666666666667,
+     "detected": 0.8166666666666667,
+     "leaked_share": 0.6468712292609352,
+     "benign_event_fp": 0.11916264090177134,
+     "benign_person_fp": 0.1683673469387755,
+     "fp_by_kind": {
+      "life-event": 0.7333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.12048192771084337
+     },
+     "victim_benign_blocked": 0.26436781609195403
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7113851181498241,
+     "benign_event_fp": 0.0998389694041868,
+     "benign_person_fp": 0.1326530612244898,
+     "fp_by_kind": {
+      "life-event": 0.5666666666666667,
+      "quiet": 0.012048192771084338,
+      "typical": 0.0963855421686747
+     },
+     "victim_benign_blocked": 0.21264367816091953
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.55,
+     "detected": 0.55,
+     "leaked_share": 0.7957638888888889,
+     "benign_event_fp": 0.05958132045088567,
+     "benign_person_fp": 0.07653061224489796,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.0,
+      "typical": 0.024096385542168676
+     },
+     "victim_benign_blocked": 0.14367816091954022
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.5166666666666667,
+     "detected": 0.5166666666666667,
+     "leaked_share": 0.8227777777777778,
+     "benign_event_fp": 0.04669887278582931,
+     "benign_person_fp": 0.061224489795918366,
+     "fp_by_kind": {
+      "life-event": 0.3333333333333333,
+      "quiet": 0.0,
+      "typical": 0.024096385542168676
+     },
+     "victim_benign_blocked": 0.13218390804597702
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.3333333333333333,
+     "detected": 0.3333333333333333,
+     "leaked_share": 0.891421568627451,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.09770114942528736
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.2833333333333333,
+     "detected": 0.2833333333333333,
+     "leaked_share": 0.913921568627451,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.07471264367816093
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9272549019607843,
+     "benign_event_fp": 0.01288244766505636,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.040229885057471264
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.2,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.9549346405228758,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.022988505747126436
+    }
+   },
+   "D3 or, not sticky": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.3985977802154273,
+     "benign_event_fp": 0.32689210950080516,
+     "benign_person_fp": 0.5510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.21686746987951808,
+      "typical": 0.7349397590361446
+     },
+     "victim_benign_blocked": 0.5057471264367817
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.5355929201517438,
+     "benign_event_fp": 0.2028985507246377,
+     "benign_person_fp": 0.413265306122449,
+     "fp_by_kind": {
+      "life-event": 0.9,
+      "quiet": 0.13253012048192772,
+      "typical": 0.5180722891566265
+     },
+     "victim_benign_blocked": 0.40229885057471265
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.6573142911010559,
+     "benign_event_fp": 0.10789049919484701,
+     "benign_person_fp": 0.25510204081632654,
+     "fp_by_kind": {
+      "life-event": 0.7666666666666667,
+      "quiet": 0.012048192771084338,
+      "typical": 0.3132530120481928
+     },
+     "victim_benign_blocked": 0.29310344827586204
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.7833333333333333,
+     "detected": 0.7833333333333333,
+     "leaked_share": 0.7068976244343892,
+     "benign_event_fp": 0.0853462157809984,
+     "benign_person_fp": 0.18877551020408162,
+     "fp_by_kind": {
+      "life-event": 0.5666666666666667,
+      "quiet": 0.012048192771084338,
+      "typical": 0.2289156626506024
+     },
+     "victim_benign_blocked": 0.25862068965517243
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7775163398692811,
+     "benign_event_fp": 0.04508856682769726,
+     "benign_person_fp": 0.10204081632653061,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.0,
+      "typical": 0.08433734939759036
+     },
+     "victim_benign_blocked": 0.20114942528735633
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7892524509803922,
+     "benign_event_fp": 0.0322061191626409,
+     "benign_person_fp": 0.07653061224489796,
+     "fp_by_kind": {
+      "life-event": 0.3333333333333333,
+      "quiet": 0.0,
+      "typical": 0.060240963855421686
+     },
+     "victim_benign_blocked": 0.19540229885057472
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5,
+     "detected": 0.5,
+     "leaked_share": 0.8667687908496733,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.14367816091954022
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.43333333333333335,
+     "detected": 0.43333333333333335,
+     "leaked_share": 0.898921568627451,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.14367816091954022
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.9145098039215687,
+     "benign_event_fp": 0.00644122383252818,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.09770114942528736
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.933562091503268,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.07471264367816093
+    }
+   }
+  },
+  "rq2": {
+   "or": {
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.5481579939668175,
+     "benign_event_fp": 0.17713365539452497,
+     "benign_person_fp": 0.2653061224489796,
+     "fp_by_kind": {
+      "life-event": 0.7666666666666667,
+      "quiet": 0.024096385542168676,
+      "typical": 0.3253012048192771
+     },
+     "victim_benign_blocked": 0.6724137931034483
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7056781045751634,
+     "benign_event_fp": 0.07568438003220612,
+     "benign_person_fp": 0.11224489795918367,
+     "fp_by_kind": {
+      "life-event": 0.4666666666666667,
+      "quiet": 0.0,
+      "typical": 0.0963855421686747
+     },
+     "victim_benign_blocked": 0.5057471264367817
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.733108660130719,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5166666666666667,
+     "detected": 0.5166666666666667,
+     "leaked_share": 0.8028308823529412,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3735632183908046
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.8752450980392157,
+     "benign_event_fp": 0.01288244766505636,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.25862068965517243
+    },
+    "1.0": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.9104248366013072,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.20689655172413793
+    },
+    "1.2": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "max": {
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.5481579939668175,
+     "benign_event_fp": 0.17713365539452497,
+     "benign_person_fp": 0.2653061224489796,
+     "fp_by_kind": {
+      "life-event": 0.7666666666666667,
+      "quiet": 0.024096385542168676,
+      "typical": 0.3253012048192771
+     },
+     "victim_benign_blocked": 0.6724137931034483
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.7056781045751634,
+     "benign_event_fp": 0.07568438003220612,
+     "benign_person_fp": 0.11224489795918367,
+     "fp_by_kind": {
+      "life-event": 0.4666666666666667,
+      "quiet": 0.0,
+      "typical": 0.0963855421686747
+     },
+     "victim_benign_blocked": 0.5057471264367817
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6833333333333333,
+     "detected": 0.6833333333333333,
+     "leaked_share": 0.733108660130719,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.36666666666666664,
+      "quiet": 0.0,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.4942528735632184
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.5166666666666667,
+     "detected": 0.5166666666666667,
+     "leaked_share": 0.8028308823529412,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.1,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3735632183908046
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.8752450980392157,
+     "benign_event_fp": 0.01288244766505636,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.25862068965517243
+    },
+    "1.0": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.9104248366013072,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.20689655172413793
+    },
+    "1.2": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "sum": {
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9333333333333333,
+     "detected": 0.9333333333333333,
+     "leaked_share": 0.4713568090406326,
+     "benign_event_fp": 0.2995169082125604,
+     "benign_person_fp": 0.42346938775510207,
+     "fp_by_kind": {
+      "life-event": 0.9333333333333333,
+      "quiet": 0.10843373493975904,
+      "typical": 0.5542168674698795
+     },
+     "victim_benign_blocked": 0.7471264367816092
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.75,
+     "detected": 0.75,
+     "leaked_share": 0.592683195072901,
+     "benign_event_fp": 0.2028985507246377,
+     "benign_person_fp": 0.28061224489795916,
+     "fp_by_kind": {
+      "life-event": 0.8333333333333334,
+      "quiet": 0.03614457831325301,
+      "typical": 0.3253012048192771
+     },
+     "victim_benign_blocked": 0.7068965517241379
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.75,
+     "detected": 0.75,
+     "leaked_share": 0.6029609728506787,
+     "benign_event_fp": 0.18357487922705315,
+     "benign_person_fp": 0.2602040816326531,
+     "fp_by_kind": {
+      "life-event": 0.8333333333333334,
+      "quiet": 0.024096385542168676,
+      "typical": 0.2891566265060241
+     },
+     "victim_benign_blocked": 0.6781609195402298
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.6166666666666667,
+     "detected": 0.6166666666666667,
+     "leaked_share": 0.671700289089995,
+     "benign_event_fp": 0.12560386473429952,
+     "benign_person_fp": 0.18877551020408162,
+     "fp_by_kind": {
+      "life-event": 0.6666666666666666,
+      "quiet": 0.012048192771084338,
+      "typical": 0.1927710843373494
+     },
+     "victim_benign_blocked": 0.6494252873563219
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.5833333333333334,
+     "detected": 0.5833333333333334,
+     "leaked_share": 0.7289118275515335,
+     "benign_event_fp": 0.057971014492753624,
+     "benign_person_fp": 0.08673469387755102,
+     "fp_by_kind": {
+      "life-event": 0.4,
+      "quiet": 0.0,
+      "typical": 0.060240963855421686
+     },
+     "victim_benign_blocked": 0.5402298850574713
+    },
+    "1.0": {
+     "campaigns": 60,
+     "prevented": 0.5666666666666667,
+     "detected": 0.5666666666666667,
+     "leaked_share": 0.7759191176470589,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.061224489795918366,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.060240963855421686
+     },
+     "victim_benign_blocked": 0.4540229885057471
+    },
+    "1.2": {
+     "campaigns": 60,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.8676960784313725,
+     "benign_event_fp": 0.01288244766505636,
+     "benign_person_fp": 0.025510204081632654,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3218390804597701
+    }
+   }
+  }
+ },
+ "qwen/qwen3-32b": {
+  "scorer": {
+   "events": 1245,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.9455445544554455,
+     "recall": 0.955,
+     "f1": 0.9502487562189055,
+     "support": 400
+    },
+    "actor:benign": {
+     "precision": 0.826171875,
+     "recall": 0.9988193624557261,
+     "f1": 0.9043292357028327,
+     "support": 847
+    },
+    "all": {
+     "precision": 0.8599439775910365,
+     "recall": 0.9847634322373697,
+     "f1": 0.9181308411214953,
+     "support": 1247
+    },
+    "all excl. name": {
+     "precision": 0.9924717691342535,
+     "recall": 0.9937185929648241,
+     "f1": 0.9930947897049593,
+     "support": 796
+    },
+    "injection": {
+     "precision": 1.0,
+     "recall": 0.25,
+     "f1": 0.4,
+     "support": 20
+    },
+    "name only": {
+     "precision": 0.6925515055467512,
+     "recall": 0.9689578713968958,
+     "f1": 0.8077634011090572,
+     "support": 451
+    },
+    "style:direct": {
+     "precision": 0.8036890645586298,
+     "recall": 0.9870550161812298,
+     "f1": 0.8859840232389252,
+     "support": 618
+    },
+    "style:inferable": {
+     "precision": 0.9411764705882353,
+     "recall": 0.9795918367346939,
+     "f1": 0.96,
+     "support": 196
+    },
+    "style:none": {
+     "precision": NaN,
+     "recall": NaN,
+     "f1": NaN,
+     "support": 0
+    },
+    "style:paraphrase": {
+     "precision": 0.9161290322580645,
+     "recall": 0.9838337182448037,
+     "f1": 0.9487750556792873,
+     "support": 433
+    }
+   },
+   "linkage": 0.9750812567713976,
+   "stage1_exit": 0.121285140562249,
+   "errors": 0,
+   "latency_mean": 16.52225776965265,
+   "latency_p95": 25.2
+  },
+  "rq1": {
+   "D0 per-request (limit 0.6)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.001610305958132045,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.001610305958132045,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.001610305958132045,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.001610305958132045,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.001610305958132045,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.012048192771084338,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D_session per-session": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D1 per-account": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D_traj per-account trajectory (30 d)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.7568438003220612,
+     "benign_person_fp": 0.8928571428571429,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7831325301204819,
+      "typical": 0.9759036144578314
+     },
+     "victim_benign_blocked": 0.7183908045977011
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.7568438003220612,
+     "benign_person_fp": 0.8928571428571429,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7831325301204819,
+      "typical": 0.9759036144578314
+     },
+     "victim_benign_blocked": 0.7183908045977011
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.7568438003220612,
+     "benign_person_fp": 0.8928571428571429,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7831325301204819,
+      "typical": 0.9759036144578314
+     },
+     "victim_benign_blocked": 0.7183908045977011
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.7568438003220612,
+     "benign_person_fp": 0.8928571428571429,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7831325301204819,
+      "typical": 0.9759036144578314
+     },
+     "victim_benign_blocked": 0.7183908045977011
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.7568438003220612,
+     "benign_person_fp": 0.8928571428571429,
+     "fp_by_kind": {
+      "life-event": 0.9666666666666667,
+      "quiet": 0.7831325301204819,
+      "typical": 0.9759036144578314
+     },
+     "victim_benign_blocked": 0.7183908045977011
+    }
+   },
+   "D2 per-org": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.937843137254902,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.888888888888889,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.06666666666666667,
+     "detected": 0.06666666666666667,
+     "leaked_share": 0.9647058823529412,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    }
+   },
+   "D3 federated (or)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7606413398692811,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8622222222222222,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.9333333333333333,
+     "detected": 0.9333333333333333,
+     "leaked_share": 0.638888888888889,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6170098039215687,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    }
+   },
+   "D3c centralised (or)": {
+    "all": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7606413398692811,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8622222222222222,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.9333333333333333,
+     "detected": 0.9333333333333333,
+     "leaked_share": 0.638888888888889,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6170098039215687,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    }
+   }
+  },
+  "rq1_sweep": {
+   "D1 per-account": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.7166666666666667,
+     "detected": 0.7166666666666667,
+     "leaked_share": 0.7335692901869373,
+     "benign_event_fp": 0.037037037037037035,
+     "benign_person_fp": 0.10714285714285714,
+     "fp_by_kind": {
+      "life-event": 0.26666666666666666,
+      "quiet": 0.012048192771084338,
+      "typical": 0.14457831325301204
+     },
+     "victim_benign_blocked": 0.028735632183908046
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.5333333333333333,
+     "detected": 0.5333333333333333,
+     "leaked_share": 0.8112829654006125,
+     "benign_event_fp": 0.01610305958132045,
+     "benign_person_fp": 0.04081632653061224,
+     "fp_by_kind": {
+      "life-event": 0.2,
+      "quiet": 0.012048192771084338,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.022988505747126436
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.3,
+     "detected": 0.3,
+     "leaked_share": 0.9247008547008547,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.9435897435897436,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.1,
+     "detected": 0.1,
+     "leaked_share": 0.9744444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D2 per-org": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.5705491376814907,
+     "benign_event_fp": 0.20933977455716588,
+     "benign_person_fp": 0.3520408163265306,
+     "fp_by_kind": {
+      "life-event": 0.8666666666666667,
+      "quiet": 0.08433734939759036,
+      "typical": 0.43373493975903615
+     },
+     "victim_benign_blocked": 0.4367816091954023
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.75,
+     "detected": 0.75,
+     "leaked_share": 0.7123654817404818,
+     "benign_event_fp": 0.10789049919484701,
+     "benign_person_fp": 0.1989795918367347,
+     "fp_by_kind": {
+      "life-event": 0.6666666666666666,
+      "quiet": 0.060240963855421686,
+      "typical": 0.1686746987951807
+     },
+     "victim_benign_blocked": 0.28160919540229884
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.5166666666666667,
+     "detected": 0.5166666666666667,
+     "leaked_share": 0.8641779788838613,
+     "benign_event_fp": 0.03542673107890499,
+     "benign_person_fp": 0.0663265306122449,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.012048192771084338,
+      "typical": 0.060240963855421686
+     },
+     "victim_benign_blocked": 0.16666666666666666
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.8997335344394168,
+     "benign_event_fp": 0.024154589371980676,
+     "benign_person_fp": 0.04081632653061224,
+     "fp_by_kind": {
+      "life-event": 0.16666666666666666,
+      "quiet": 0.012048192771084338,
+      "typical": 0.024096385542168676
+     },
+     "victim_benign_blocked": 0.11494252873563218
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.937843137254902,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.937843137254902,
+     "benign_event_fp": 0.017713365539452495,
+     "benign_person_fp": 0.02040816326530612,
+     "fp_by_kind": {
+      "life-event": 0.13333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08045977011494253
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D3 or": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.3638271668418728,
+     "benign_event_fp": 0.3607085346215781,
+     "benign_person_fp": 0.5102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.9333333333333333,
+      "quiet": 0.14457831325301204,
+      "typical": 0.7228915662650602
+     },
+     "victim_benign_blocked": 0.6954022988505747
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.9333333333333333,
+     "detected": 0.9333333333333333,
+     "leaked_share": 0.4820019196489785,
+     "benign_event_fp": 0.22705314009661837,
+     "benign_person_fp": 0.34183673469387754,
+     "fp_by_kind": {
+      "life-event": 0.8,
+      "quiet": 0.08433734939759036,
+      "typical": 0.43373493975903615
+     },
+     "victim_benign_blocked": 0.6666666666666666
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.8833333333333333,
+     "detected": 0.8833333333333333,
+     "leaked_share": 0.6189900703871293,
+     "benign_event_fp": 0.12238325281803543,
+     "benign_person_fp": 0.1989795918367347,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.2289156626506024
+     },
+     "victim_benign_blocked": 0.5977011494252874
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.75,
+     "detected": 0.75,
+     "leaked_share": 0.6576706259426848,
+     "benign_event_fp": 0.09017713365539452,
+     "benign_person_fp": 0.1377551020408163,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.012048192771084338,
+      "typical": 0.1566265060240964
+     },
+     "victim_benign_blocked": 0.5344827586206896
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7240441176470589,
+     "benign_event_fp": 0.04830917874396135,
+     "benign_person_fp": 0.0663265306122449,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.04819277108433735
+     },
+     "victim_benign_blocked": 0.47701149425287354
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7606413398692811,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8387295751633987,
+     "benign_event_fp": 0.00966183574879227,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3333333333333333
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.38333333333333336,
+     "detected": 0.38333333333333336,
+     "leaked_share": 0.872859477124183,
+     "benign_event_fp": 0.00966183574879227,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3160919540229885
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.8969771241830066,
+     "benign_event_fp": 0.00644122383252818,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.26436781609195403
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.3333333333333333,
+     "detected": 0.3333333333333333,
+     "leaked_share": 0.9329901960784314,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.19540229885057472
+    }
+   },
+   "D3 or, 90-day window": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.3638271668418728,
+     "benign_event_fp": 0.3285024154589372,
+     "benign_person_fp": 0.4846938775510204,
+     "fp_by_kind": {
+      "life-event": 0.9333333333333333,
+      "quiet": 0.13253012048192772,
+      "typical": 0.6746987951807228
+     },
+     "victim_benign_blocked": 0.6206896551724138
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.9333333333333333,
+     "detected": 0.9333333333333333,
+     "leaked_share": 0.4820019196489785,
+     "benign_event_fp": 0.20933977455716588,
+     "benign_person_fp": 0.3112244897959184,
+     "fp_by_kind": {
+      "life-event": 0.8,
+      "quiet": 0.07228915662650602,
+      "typical": 0.37349397590361444
+     },
+     "victim_benign_blocked": 0.5517241379310345
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.8833333333333333,
+     "detected": 0.8833333333333333,
+     "leaked_share": 0.6189900703871293,
+     "benign_event_fp": 0.10628019323671498,
+     "benign_person_fp": 0.17346938775510204,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.1686746987951807
+     },
+     "victim_benign_blocked": 0.47126436781609193
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.75,
+     "detected": 0.75,
+     "leaked_share": 0.6576706259426848,
+     "benign_event_fp": 0.07890499194847021,
+     "benign_person_fp": 0.12244897959183673,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.012048192771084338,
+      "typical": 0.12048192771084337
+     },
+     "victim_benign_blocked": 0.40804597701149425
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7240441176470589,
+     "benign_event_fp": 0.04508856682769726,
+     "benign_person_fp": 0.061224489795918366,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.3735632183908046
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7606413398692811,
+     "benign_event_fp": 0.03542673107890499,
+     "benign_person_fp": 0.04591836734693878,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.024096385542168676
+     },
+     "victim_benign_blocked": 0.3563218390804598
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8387295751633987,
+     "benign_event_fp": 0.00966183574879227,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.27011494252873564
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.35,
+     "detected": 0.35,
+     "leaked_share": 0.880359477124183,
+     "benign_event_fp": 0.00966183574879227,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.22988505747126436
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.3333333333333333,
+     "detected": 0.3333333333333333,
+     "leaked_share": 0.9044771241830065,
+     "benign_event_fp": 0.00644122383252818,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.1896551724137931
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.31666666666666665,
+     "detected": 0.31666666666666665,
+     "leaked_share": 0.937156862745098,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.14367816091954022
+    }
+   },
+   "D3 or, 30-day window": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.41283451978304925,
+     "benign_event_fp": 0.23832528180354268,
+     "benign_person_fp": 0.32653061224489793,
+     "fp_by_kind": {
+      "life-event": 0.9333333333333333,
+      "quiet": 0.060240963855421686,
+      "typical": 0.37349397590361444
+     },
+     "victim_benign_blocked": 0.40804597701149425
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.5546694033091092,
+     "benign_event_fp": 0.16586151368760063,
+     "benign_person_fp": 0.22959183673469388,
+     "fp_by_kind": {
+      "life-event": 0.8,
+      "quiet": 0.04819277108433735,
+      "typical": 0.20481927710843373
+     },
+     "victim_benign_blocked": 0.3160919540229885
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.7833333333333333,
+     "detected": 0.7833333333333333,
+     "leaked_share": 0.7179484037204625,
+     "benign_event_fp": 0.09178743961352658,
+     "benign_person_fp": 0.1377551020408163,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.08433734939759036
+     },
+     "victim_benign_blocked": 0.19540229885057472
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.6,
+     "detected": 0.6,
+     "leaked_share": 0.7649622926093514,
+     "benign_event_fp": 0.07085346215780998,
+     "benign_person_fp": 0.10204081632653061,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.012048192771084338,
+      "typical": 0.07228915662650602
+     },
+     "victim_benign_blocked": 0.13793103448275862
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.48333333333333334,
+     "detected": 0.48333333333333334,
+     "leaked_share": 0.829718137254902,
+     "benign_event_fp": 0.040257648953301126,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.10919540229885058
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8508986928104576,
+     "benign_event_fp": 0.030595813204508857,
+     "benign_person_fp": 0.03571428571428571,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.09195402298850575
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.2833333333333333,
+     "detected": 0.2833333333333333,
+     "leaked_share": 0.9133986928104576,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.06321839080459771
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.23333333333333334,
+     "detected": 0.23333333333333334,
+     "leaked_share": 0.9314869281045752,
+     "benign_event_fp": 0.008051529790660225,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.05747126436781609
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.21666666666666667,
+     "detected": 0.21666666666666667,
+     "leaked_share": 0.9448202614379085,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.022988505747126436
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.18333333333333332,
+     "detected": 0.2,
+     "leaked_share": 0.97,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.005747126436781609
+    }
+   },
+   "D3 or, not sticky": {
+    "0.4": {
+     "campaigns": 60,
+     "prevented": 0.9666666666666667,
+     "detected": 0.9666666666666667,
+     "leaked_share": 0.43001746347334585,
+     "benign_event_fp": 0.27375201288244766,
+     "benign_person_fp": 0.5102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.9333333333333333,
+      "quiet": 0.14457831325301204,
+      "typical": 0.7228915662650602
+     },
+     "victim_benign_blocked": 0.4827586206896552
+    },
+    "0.5": {
+     "campaigns": 60,
+     "prevented": 0.9333333333333333,
+     "detected": 0.9333333333333333,
+     "leaked_share": 0.5446615476027241,
+     "benign_event_fp": 0.16264090177133655,
+     "benign_person_fp": 0.34183673469387754,
+     "fp_by_kind": {
+      "life-event": 0.8,
+      "quiet": 0.08433734939759036,
+      "typical": 0.43373493975903615
+     },
+     "victim_benign_blocked": 0.40804597701149425
+    },
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.8833333333333333,
+     "detected": 0.8833333333333333,
+     "leaked_share": 0.6766657239819005,
+     "benign_event_fp": 0.08373590982286634,
+     "benign_person_fp": 0.1989795918367347,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.2289156626506024
+     },
+     "victim_benign_blocked": 0.3103448275862069
+    },
+    "0.65": {
+     "campaigns": 60,
+     "prevented": 0.75,
+     "detected": 0.75,
+     "leaked_share": 0.7256935017596783,
+     "benign_event_fp": 0.0644122383252818,
+     "benign_person_fp": 0.1377551020408163,
+     "fp_by_kind": {
+      "life-event": 0.43333333333333335,
+      "quiet": 0.012048192771084338,
+      "typical": 0.1566265060240964
+     },
+     "victim_benign_blocked": 0.28160919540229884
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7886274509803922,
+     "benign_event_fp": 0.027375201288244767,
+     "benign_person_fp": 0.0663265306122449,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.04819277108433735
+     },
+     "victim_benign_blocked": 0.20689655172413793
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.8011968954248366,
+     "benign_event_fp": 0.020933977455716585,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.20689655172413793
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.870641339869281,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.1781609195402299
+    },
+    "0.85": {
+     "campaigns": 60,
+     "prevented": 0.38333333333333336,
+     "detected": 0.38333333333333336,
+     "leaked_share": 0.9131045751633987,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.12643678160919541
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.9239869281045752,
+     "benign_event_fp": 0.00322061191626409,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.08620689655172414
+    },
+    "0.95": {
+     "campaigns": 60,
+     "prevented": 0.3333333333333333,
+     "detected": 0.3333333333333333,
+     "leaked_share": 0.9455392156862745,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.04597701149425287
+    }
+   }
+  },
+  "rq2": {
+   "or": {
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.8833333333333333,
+     "detected": 0.8833333333333333,
+     "leaked_share": 0.6189900703871293,
+     "benign_event_fp": 0.12238325281803543,
+     "benign_person_fp": 0.1989795918367347,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.2289156626506024
+     },
+     "victim_benign_blocked": 0.5977011494252874
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7240441176470589,
+     "benign_event_fp": 0.04830917874396135,
+     "benign_person_fp": 0.0663265306122449,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.04819277108433735
+     },
+     "victim_benign_blocked": 0.47701149425287354
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7606413398692811,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8387295751633987,
+     "benign_event_fp": 0.00966183574879227,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3333333333333333
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.8969771241830066,
+     "benign_event_fp": 0.00644122383252818,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.26436781609195403
+    },
+    "1.0": {
+     "campaigns": 60,
+     "prevented": 0.3333333333333333,
+     "detected": 0.3333333333333333,
+     "leaked_share": 0.9329901960784314,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.19540229885057472
+    },
+    "1.2": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "max": {
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.8833333333333333,
+     "detected": 0.8833333333333333,
+     "leaked_share": 0.6189900703871293,
+     "benign_event_fp": 0.12238325281803543,
+     "benign_person_fp": 0.1989795918367347,
+     "fp_by_kind": {
+      "life-event": 0.6333333333333333,
+      "quiet": 0.012048192771084338,
+      "typical": 0.2289156626506024
+     },
+     "victim_benign_blocked": 0.5977011494252874
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7240441176470589,
+     "benign_event_fp": 0.04830917874396135,
+     "benign_person_fp": 0.0663265306122449,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.04819277108433735
+     },
+     "victim_benign_blocked": 0.47701149425287354
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.6666666666666666,
+     "detected": 0.6666666666666666,
+     "leaked_share": 0.7606413398692811,
+     "benign_event_fp": 0.03864734299516908,
+     "benign_person_fp": 0.05102040816326531,
+     "fp_by_kind": {
+      "life-event": 0.23333333333333334,
+      "quiet": 0.0,
+      "typical": 0.03614457831325301
+     },
+     "victim_benign_blocked": 0.45977011494252873
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8387295751633987,
+     "benign_event_fp": 0.00966183574879227,
+     "benign_person_fp": 0.015306122448979591,
+     "fp_by_kind": {
+      "life-event": 0.06666666666666667,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.3333333333333333
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.36666666666666664,
+     "detected": 0.36666666666666664,
+     "leaked_share": 0.8969771241830066,
+     "benign_event_fp": 0.00644122383252818,
+     "benign_person_fp": 0.01020408163265306,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.012048192771084338
+     },
+     "victim_benign_blocked": 0.26436781609195403
+    },
+    "1.0": {
+     "campaigns": 60,
+     "prevented": 0.3333333333333333,
+     "detected": 0.3333333333333333,
+     "leaked_share": 0.9329901960784314,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.19540229885057472
+    },
+    "1.2": {
+     "campaigns": 60,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "sum": {
+    "0.6": {
+     "campaigns": 60,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.5460777743498332,
+     "benign_event_fp": 0.20450885668276972,
+     "benign_person_fp": 0.32142857142857145,
+     "fp_by_kind": {
+      "life-event": 0.8333333333333334,
+      "quiet": 0.04819277108433735,
+      "typical": 0.40963855421686746
+     },
+     "victim_benign_blocked": 0.6666666666666666
+    },
+    "0.7": {
+     "campaigns": 60,
+     "prevented": 0.7333333333333333,
+     "detected": 0.7333333333333333,
+     "leaked_share": 0.6472011689291102,
+     "benign_event_fp": 0.1320450885668277,
+     "benign_person_fp": 0.19387755102040816,
+     "fp_by_kind": {
+      "life-event": 0.7,
+      "quiet": 0.0,
+      "typical": 0.20481927710843373
+     },
+     "victim_benign_blocked": 0.6091954022988506
+    },
+    "0.75": {
+     "campaigns": 60,
+     "prevented": 0.7166666666666667,
+     "detected": 0.7166666666666667,
+     "leaked_share": 0.659215057817999,
+     "benign_event_fp": 0.1111111111111111,
+     "benign_person_fp": 0.17346938775510204,
+     "fp_by_kind": {
+      "life-event": 0.7,
+      "quiet": 0.0,
+      "typical": 0.1566265060240964
+     },
+     "victim_benign_blocked": 0.5977011494252874
+    },
+    "0.8": {
+     "campaigns": 60,
+     "prevented": 0.6166666666666667,
+     "detected": 0.6166666666666667,
+     "leaked_share": 0.7260426093514329,
+     "benign_event_fp": 0.07407407407407407,
+     "benign_person_fp": 0.12244897959183673,
+     "fp_by_kind": {
+      "life-event": 0.5666666666666667,
+      "quiet": 0.0,
+      "typical": 0.08433734939759036
+     },
+     "victim_benign_blocked": 0.5862068965517241
+    },
+    "0.9": {
+     "campaigns": 60,
+     "prevented": 0.5333333333333333,
+     "detected": 0.5333333333333333,
+     "leaked_share": 0.7931152589240825,
+     "benign_event_fp": 0.033816425120772944,
+     "benign_person_fp": 0.05612244897959184,
+     "fp_by_kind": {
+      "life-event": 0.3,
+      "quiet": 0.0,
+      "typical": 0.024096385542168676
+     },
+     "victim_benign_blocked": 0.4827586206896552
+    },
+    "1.0": {
+     "campaigns": 60,
+     "prevented": 0.5,
+     "detected": 0.5,
+     "leaked_share": 0.8251879084967321,
+     "benign_event_fp": 0.020933977455716585,
+     "benign_person_fp": 0.03571428571428571,
+     "fp_by_kind": {
+      "life-event": 0.16666666666666666,
+      "quiet": 0.0,
+      "typical": 0.024096385542168676
+     },
+     "victim_benign_blocked": 0.41379310344827586
+    },
+    "1.2": {
+     "campaigns": 60,
+     "prevented": 0.2833333333333333,
+     "detected": 0.2833333333333333,
+     "leaked_share": 0.9229697712418301,
+     "benign_event_fp": 0.004830917874396135,
+     "benign_person_fp": 0.00510204081632653,
+     "fp_by_kind": {
+      "life-event": 0.03333333333333333,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.26436781609195403
+    }
+   }
+  }
+ },
+ "rq4_common": {
+  "qwen/qwen3-4b": {
+   "events": 1245,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.785140562248996,
+     "recall": 0.9775,
+     "f1": 0.8708240534521158,
+     "support": 400
+    },
+    "actor:benign": {
+     "precision": 0.6505376344086021,
+     "recall": 1.0,
+     "f1": 0.7882736156351792,
+     "support": 847
+    },
+    "all": {
+     "precision": 0.6877777777777778,
+     "recall": 0.9927826784282278,
+     "f1": 0.8126025598949786,
+     "support": 1247
+    },
+    "all excl. name": {
+     "precision": 0.9055745164960182,
+     "recall": 1.0,
+     "f1": 0.9504477611940298,
+     "support": 796
+    },
+    "injection": {
+     "precision": 0.9166666666666666,
+     "recall": 0.55,
+     "f1": 0.6874999999999999,
+     "support": 20
+    },
+    "name only": {
+     "precision": 0.4799131378935939,
+     "recall": 0.9800443458980045,
+     "f1": 0.6443148688046647,
+     "support": 451
+    },
+    "style:direct": {
+     "precision": 0.6531914893617021,
+     "recall": 0.9935275080906149,
+     "f1": 0.7881899871630295,
+     "support": 618
+    },
+    "style:inferable": {
+     "precision": 0.7677165354330708,
+     "recall": 0.9948979591836735,
+     "f1": 0.8666666666666666,
+     "support": 196
+    },
+    "style:none": {
+     "precision": NaN,
+     "recall": NaN,
+     "f1": NaN,
+     "support": 0
+    },
+    "style:paraphrase": {
+     "precision": 0.7079207920792079,
+     "recall": 0.9907621247113164,
+     "f1": 0.8257940327237728,
+     "support": 433
+    }
+   },
+   "linkage": 0.9783315276273022,
+   "stage1_exit": 0.121285140562249,
+   "errors": 0,
+   "latency_mean": 6.321444241316271,
+   "latency_p95": 13.6
+  },
+  "qwen/qwen3-32b": {
+   "events": 1245,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.9455445544554455,
+     "recall": 0.955,
+     "f1": 0.9502487562189055,
+     "support": 400
+    },
+    "actor:benign": {
+     "precision": 0.826171875,
+     "recall": 0.9988193624557261,
+     "f1": 0.9043292357028327,
+     "support": 847
+    },
+    "all": {
+     "precision": 0.8599439775910365,
+     "recall": 0.9847634322373697,
+     "f1": 0.9181308411214953,
+     "support": 1247
+    },
+    "all excl. name": {
+     "precision": 0.9924717691342535,
+     "recall": 0.9937185929648241,
+     "f1": 0.9930947897049593,
+     "support": 796
+    },
+    "injection": {
+     "precision": 1.0,
+     "recall": 0.25,
+     "f1": 0.4,
+     "support": 20
+    },
+    "name only": {
+     "precision": 0.6925515055467512,
+     "recall": 0.9689578713968958,
+     "f1": 0.8077634011090572,
+     "support": 451
+    },
+    "style:direct": {
+     "precision": 0.8036890645586298,
+     "recall": 0.9870550161812298,
+     "f1": 0.8859840232389252,
+     "support": 618
+    },
+    "style:inferable": {
+     "precision": 0.9411764705882353,
+     "recall": 0.9795918367346939,
+     "f1": 0.96,
+     "support": 196
+    },
+    "style:none": {
+     "precision": NaN,
+     "recall": NaN,
+     "f1": NaN,
+     "support": 0
+    },
+    "style:paraphrase": {
+     "precision": 0.9161290322580645,
+     "recall": 0.9838337182448037,
+     "f1": 0.9487750556792873,
+     "support": 433
+    }
+   },
+   "linkage": 0.9750812567713976,
+   "stage1_exit": 0.121285140562249,
+   "errors": 0,
+   "latency_mean": 16.52225776965265,
+   "latency_p95": 25.2
+  }
+ }
+}

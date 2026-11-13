@@ -1,0 +1,5468 @@
+{
+ "qwen/qwen3-4b": {
+  "scorer": {
+   "events": 2025,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.7674418604651163,
+     "recall": 0.9766355140186916,
+     "f1": 0.8594928032899246,
+     "support": 1284
+    },
+    "actor:benign": {
+     "precision": 0.7012903225806452,
+     "recall": 1.0,
+     "f1": 0.8244216913158893,
+     "support": 1087
+    },
+    "all": {
+     "precision": 0.7352386934673367,
+     "recall": 0.9873471109236609,
+     "f1": 0.8428442844284428,
+     "support": 2371
+    },
+    "all excl. name": {
+     "precision": 0.8984476067270375,
+     "recall": 0.9893162393162394,
+     "f1": 0.9416949152542372,
+     "support": 1404
+    },
+    "inj:auditor-note": {
+     "precision": 0.8235294117647058,
+     "recall": 0.5,
+     "f1": 0.6222222222222222,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 0.6666666666666666,
+     "recall": 1.0,
+     "f1": 0.8,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 0.625,
+     "recall": 1.0,
+     "f1": 0.7692307692307693,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.875,
+     "recall": 1.0,
+     "f1": 0.9333333333333333,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 0.75,
+     "recall": 1.0,
+     "f1": 0.8571428571428571,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.7301587301587301,
+     "recall": 0.6052631578947368,
+     "f1": 0.6618705035971223,
+     "support": 76
+    },
+    "name only": {
+     "precision": 0.5811965811965812,
+     "recall": 0.984488107549121,
+     "f1": 0.7309021113243762,
+     "support": 967
+    },
+    "style:direct": {
+     "precision": 0.6981792717086834,
+     "recall": 0.9910536779324056,
+     "f1": 0.8192276088742811,
+     "support": 1006
+    },
+    "style:inferable": {
+     "precision": 0.7963875205254516,
+     "recall": 0.9837728194726166,
+     "f1": 0.8802177858439202,
+     "support": 493
+    },
+    "style:none": {
+     "precision": NaN,
+     "recall": NaN,
+     "f1": NaN,
+     "support": 0
+    },
+    "style:paraphrase": {
+     "precision": 0.7489102005231038,
+     "recall": 0.9850917431192661,
+     "f1": 0.8509162951956415,
+     "support": 872
+    }
+   },
+   "linkage": 0.967990515708358,
+   "stage1_exit": 0.07654320987654321,
+   "errors": 0,
+   "latency_mean": 4.991572192513369,
+   "latency_p95": 12.44
+  },
+  "rq1": {
+   "D0 per-request (limit 0.6)": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.05,
+     "detected": 0.05,
+     "leaked_share": 0.9899038461538462,
+     "benign_event_fp": 0.01090909090909091,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.003125
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.06666666666666667,
+     "detected": 0.06666666666666667,
+     "leaked_share": 0.9794871794871794,
+     "benign_event_fp": 0.01090909090909091,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.003125
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.01090909090909091,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.003125
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.06666666666666667,
+     "detected": 0.06666666666666667,
+     "leaked_share": 0.9866666666666667,
+     "benign_event_fp": 0.01090909090909091,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.003125
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.06666666666666667,
+     "detected": 0.06666666666666667,
+     "leaked_share": 0.99,
+     "benign_event_fp": 0.01090909090909091,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.003125
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.05,
+     "detected": 0.05,
+     "leaked_share": 0.9924999999999999,
+     "benign_event_fp": 0.01090909090909091,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.003125
+    }
+   },
+   "D_session per-session": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D1 per-account": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.0875,
+     "detected": 0.1,
+     "leaked_share": 0.9777083333333333,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.05,
+     "detected": 0.1,
+     "leaked_share": 0.9875,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D_traj per-account trajectory (30 d)": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.0875,
+     "detected": 0.1,
+     "leaked_share": 0.9777083333333333,
+     "benign_event_fp": 0.8763636363636363,
+     "benign_person_fp": 0.987012987012987,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.9411764705882353,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8671875
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.8763636363636363,
+     "benign_person_fp": 0.987012987012987,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.9411764705882353,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8671875
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.8763636363636363,
+     "benign_person_fp": 0.987012987012987,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.9411764705882353,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8671875
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.8763636363636363,
+     "benign_person_fp": 0.987012987012987,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.9411764705882353,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8671875
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.8763636363636363,
+     "benign_person_fp": 0.987012987012987,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.9411764705882353,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8671875
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.05,
+     "detected": 0.1,
+     "leaked_share": 0.9875,
+     "benign_event_fp": 0.8763636363636363,
+     "benign_person_fp": 0.987012987012987,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.9411764705882353,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.8671875
+    }
+   },
+   "D2 per-org": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.175,
+     "detected": 0.1875,
+     "leaked_share": 0.9506495098039216,
+     "benign_event_fp": 0.025454545454545455,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0453125
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.025454545454545455,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0453125
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.3333333333333333,
+     "detected": 0.3333333333333333,
+     "leaked_share": 0.9066666666666667,
+     "benign_event_fp": 0.025454545454545455,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0453125
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.025454545454545455,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0453125
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9490196078431372,
+     "benign_event_fp": 0.025454545454545455,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0453125
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.05,
+     "detected": 0.1,
+     "leaked_share": 0.9875,
+     "benign_event_fp": 0.025454545454545455,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0453125
+    }
+   },
+   "D3 federated (or)": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7279319852941176,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.5333333333333333,
+     "detected": 0.5333333333333333,
+     "leaked_share": 0.84,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6122222222222222,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.5379901960784313,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.75,
+     "detected": 0.85,
+     "leaked_share": 0.725735294117647,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    }
+   },
+   "D3c centralised (or)": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7279319852941176,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.5333333333333333,
+     "detected": 0.5333333333333333,
+     "leaked_share": 0.84,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6122222222222222,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.5379901960784313,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.75,
+     "detected": 0.85,
+     "leaked_share": 0.725735294117647,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    }
+   }
+  },
+  "rq1_sweep": {
+   "D1 per-account": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.775,
+     "detected": 0.8125,
+     "leaked_share": 0.673896330385301,
+     "benign_event_fp": 0.09090909090909091,
+     "benign_person_fp": 0.2987012987012987,
+     "fp_by_kind": {
+      "life-event": 0.5454545454545454,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.375
+     },
+     "victim_benign_blocked": 0.05625
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.55,
+     "detected": 0.675,
+     "leaked_share": 0.8008123371726313,
+     "benign_event_fp": 0.04363636363636364,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.2727272727272727,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.125
+     },
+     "victim_benign_blocked": 0.0234375
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.3125,
+     "detected": 0.3875,
+     "leaked_share": 0.9022275641025641,
+     "benign_event_fp": 0.014545454545454545,
+     "benign_person_fp": 0.05194805194805195,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.00625
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.25,
+     "detected": 0.3,
+     "leaked_share": 0.9218108974358974,
+     "benign_event_fp": 0.014545454545454545,
+     "benign_person_fp": 0.05194805194805195,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.00625
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.0875,
+     "detected": 0.1,
+     "leaked_share": 0.9777083333333333,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.0875,
+     "detected": 0.1,
+     "leaked_share": 0.9777083333333333,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D2 per-org": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.9375,
+     "detected": 0.9625,
+     "leaked_share": 0.5217433954933954,
+     "benign_event_fp": 0.33090909090909093,
+     "benign_person_fp": 0.5844155844155844,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 0.625,
+      "overlap-moved": 0.0,
+      "quiet": 0.17647058823529413,
+      "typical": 0.875
+     },
+     "victim_benign_blocked": 0.3875
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.75,
+     "detected": 0.8625,
+     "leaked_share": 0.704933047956945,
+     "benign_event_fp": 0.21818181818181817,
+     "benign_person_fp": 0.42857142857142855,
+     "fp_by_kind": {
+      "life-event": 0.7272727272727273,
+      "overlap-kyc": 0.625,
+      "overlap-moved": 0.0,
+      "quiet": 0.14705882352941177,
+      "typical": 0.59375
+     },
+     "victim_benign_blocked": 0.2765625
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.5125,
+     "detected": 0.5875,
+     "leaked_share": 0.842227564102564,
+     "benign_event_fp": 0.07636363636363637,
+     "benign_person_fp": 0.16883116883116883,
+     "fp_by_kind": {
+      "life-event": 0.2727272727272727,
+      "overlap-kyc": 0.25,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.25
+     },
+     "victim_benign_blocked": 0.1609375
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.3625,
+     "detected": 0.4125,
+     "leaked_share": 0.8893108974358974,
+     "benign_event_fp": 0.06181818181818182,
+     "benign_person_fp": 0.12987012987012986,
+     "fp_by_kind": {
+      "life-event": 0.2727272727272727,
+      "overlap-kyc": 0.25,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.15625
+     },
+     "victim_benign_blocked": 0.096875
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.175,
+     "detected": 0.1875,
+     "leaked_share": 0.9506495098039216,
+     "benign_event_fp": 0.025454545454545455,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0453125
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.175,
+     "detected": 0.1875,
+     "leaked_share": 0.9506495098039216,
+     "benign_event_fp": 0.025454545454545455,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0453125
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D3 or": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.975,
+     "detected": 0.975,
+     "leaked_share": 0.30728119715252067,
+     "benign_event_fp": 0.48,
+     "benign_person_fp": 0.6233766233766234,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 0.625,
+      "overlap-moved": 0.0,
+      "quiet": 0.20588235294117646,
+      "typical": 0.90625
+     },
+     "victim_benign_blocked": 0.59375
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.44151463732346086,
+     "benign_event_fp": 0.3563636363636364,
+     "benign_person_fp": 0.4805194805194805,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 0.625,
+      "overlap-moved": 0.0,
+      "quiet": 0.14705882352941177,
+      "typical": 0.65625
+     },
+     "victim_benign_blocked": 0.5046875
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9125,
+     "detected": 0.925,
+     "leaked_share": 0.5540860671191553,
+     "benign_event_fp": 0.19636363636363635,
+     "benign_person_fp": 0.3246753246753247,
+     "fp_by_kind": {
+      "life-event": 0.6363636363636364,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.5
+     },
+     "victim_benign_blocked": 0.4109375
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.8125,
+     "detected": 0.825,
+     "leaked_share": 0.614346483785822,
+     "benign_event_fp": 0.1709090909090909,
+     "benign_person_fp": 0.2727272727272727,
+     "fp_by_kind": {
+      "life-event": 0.5454545454545454,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.40625
+     },
+     "victim_benign_blocked": 0.35625
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7061090686274509,
+     "benign_event_fp": 0.07272727272727272,
+     "benign_person_fp": 0.16883116883116883,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.21875
+     },
+     "victim_benign_blocked": 0.2828125
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7279319852941176,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.55,
+     "detected": 0.55,
+     "leaked_share": 0.7958486519607844,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.178125
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.4875,
+     "detected": 0.4875,
+     "leaked_share": 0.8316299019607843,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1671875
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.4375,
+     "detected": 0.4375,
+     "leaked_share": 0.8612254901960784,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1234375
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.4125,
+     "detected": 0.4125,
+     "leaked_share": 0.903860294117647,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1
+    }
+   },
+   "D3 or, 90-day window": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.975,
+     "detected": 0.975,
+     "leaked_share": 0.30728119715252067,
+     "benign_event_fp": 0.44,
+     "benign_person_fp": 0.5974025974025974,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 0.5,
+      "overlap-moved": 0.0,
+      "quiet": 0.14705882352941177,
+      "typical": 0.90625
+     },
+     "victim_benign_blocked": 0.5453125
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.44151463732346086,
+     "benign_event_fp": 0.31636363636363635,
+     "benign_person_fp": 0.4155844155844156,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 0.5,
+      "overlap-moved": 0.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.5625
+     },
+     "victim_benign_blocked": 0.459375
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9125,
+     "detected": 0.925,
+     "leaked_share": 0.5540860671191553,
+     "benign_event_fp": 0.17454545454545456,
+     "benign_person_fp": 0.2857142857142857,
+     "fp_by_kind": {
+      "life-event": 0.6363636363636364,
+      "overlap-kyc": 0.25,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.40625
+     },
+     "victim_benign_blocked": 0.3609375
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.8125,
+     "detected": 0.825,
+     "leaked_share": 0.614346483785822,
+     "benign_event_fp": 0.14909090909090908,
+     "benign_person_fp": 0.24675324675324675,
+     "fp_by_kind": {
+      "life-event": 0.5454545454545454,
+      "overlap-kyc": 0.25,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.34375
+     },
+     "victim_benign_blocked": 0.30625
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7061090686274509,
+     "benign_event_fp": 0.06909090909090909,
+     "benign_person_fp": 0.15584415584415584,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.21875
+     },
+     "victim_benign_blocked": 0.2390625
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7279319852941176,
+     "benign_event_fp": 0.05454545454545454,
+     "benign_person_fp": 0.12987012987012986,
+     "fp_by_kind": {
+      "life-event": 0.2727272727272727,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.2296875
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.55,
+     "detected": 0.55,
+     "leaked_share": 0.7958486519607844,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1578125
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.475,
+     "detected": 0.475,
+     "leaked_share": 0.8347549019607843,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1453125
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.425,
+     "detected": 0.425,
+     "leaked_share": 0.8643504901960785,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1078125
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.909485294117647,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08125
+    }
+   },
+   "D3 or, 30-day window": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.975,
+     "detected": 0.975,
+     "leaked_share": 0.3612407088418118,
+     "benign_event_fp": 0.3527272727272727,
+     "benign_person_fp": 0.5194805194805194,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 0.5,
+      "overlap-moved": 0.0,
+      "quiet": 0.11764705882352941,
+      "typical": 0.71875
+     },
+     "victim_benign_blocked": 0.4125
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.4987676539147127,
+     "benign_event_fp": 0.24363636363636362,
+     "benign_person_fp": 0.36363636363636365,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 0.5,
+      "overlap-moved": 0.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.40625
+     },
+     "victim_benign_blocked": 0.328125
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.85,
+     "detected": 0.8625,
+     "leaked_share": 0.6352043269230769,
+     "benign_event_fp": 0.10545454545454545,
+     "benign_person_fp": 0.16883116883116883,
+     "fp_by_kind": {
+      "life-event": 0.6363636363636364,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.125
+     },
+     "victim_benign_blocked": 0.228125
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.7375,
+     "detected": 0.75,
+     "leaked_share": 0.6940064102564103,
+     "benign_event_fp": 0.08727272727272728,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.5454545454545454,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.09375
+     },
+     "victim_benign_blocked": 0.184375
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.6125,
+     "detected": 0.6375,
+     "leaked_share": 0.7774234068627451,
+     "benign_event_fp": 0.04363636363636364,
+     "benign_person_fp": 0.07792207792207792,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.1296875
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.5875,
+     "detected": 0.6125,
+     "leaked_share": 0.7976838235294118,
+     "benign_event_fp": 0.03272727272727273,
+     "benign_person_fp": 0.06493506493506493,
+     "fp_by_kind": {
+      "life-event": 0.2727272727272727,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.11875
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.4125,
+     "detected": 0.4125,
+     "leaked_share": 0.8679166666666667,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.065625
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.375,
+     "detected": 0.375,
+     "leaked_share": 0.8897916666666666,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.059375
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.3375,
+     "detected": 0.3375,
+     "leaked_share": 0.9071078431372549,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0359375
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.2875,
+     "detected": 0.3,
+     "leaked_share": 0.9384926470588235,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.021875
+    }
+   },
+   "D3 or, not sticky": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.975,
+     "detected": 0.975,
+     "leaked_share": 0.41017099730335027,
+     "benign_event_fp": 0.33454545454545453,
+     "benign_person_fp": 0.6233766233766234,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 0.5,
+      "overlap-moved": 0.0,
+      "quiet": 0.20588235294117646,
+      "typical": 0.90625
+     },
+     "victim_benign_blocked": 0.3984375
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.5439392225421638,
+     "benign_event_fp": 0.2290909090909091,
+     "benign_person_fp": 0.4805194805194805,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 0.5,
+      "overlap-moved": 0.0,
+      "quiet": 0.14705882352941177,
+      "typical": 0.65625
+     },
+     "victim_benign_blocked": 0.278125
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.8875,
+     "detected": 0.9125,
+     "leaked_share": 0.6633656202865762,
+     "benign_event_fp": 0.09818181818181818,
+     "benign_person_fp": 0.2987012987012987,
+     "fp_by_kind": {
+      "life-event": 0.6363636363636364,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.40625
+     },
+     "victim_benign_blocked": 0.1734375
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.7875,
+     "detected": 0.8125,
+     "leaked_share": 0.7095114536199095,
+     "benign_event_fp": 0.08363636363636363,
+     "benign_person_fp": 0.24675324675324675,
+     "fp_by_kind": {
+      "life-event": 0.5454545454545454,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.3125
+     },
+     "victim_benign_blocked": 0.1546875
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7,
+     "detected": 0.725,
+     "leaked_share": 0.7739460784313725,
+     "benign_event_fp": 0.04363636363636364,
+     "benign_person_fp": 0.12987012987012986,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.15625
+     },
+     "victim_benign_blocked": 0.109375
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7,
+     "detected": 0.725,
+     "leaked_share": 0.7839981617647059,
+     "benign_event_fp": 0.03272727272727273,
+     "benign_person_fp": 0.1038961038961039,
+     "fp_by_kind": {
+      "life-event": 0.2727272727272727,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.125
+     },
+     "victim_benign_blocked": 0.1015625
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.525,
+     "detected": 0.525,
+     "leaked_share": 0.8608854166666666,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.059375
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.475,
+     "detected": 0.475,
+     "leaked_share": 0.88875,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0609375
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.425,
+     "detected": 0.425,
+     "leaked_share": 0.9077573529411764,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0421875
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.9276715686274509,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.03125
+    }
+   }
+  },
+  "rq2": {
+   "or": {
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9125,
+     "detected": 0.925,
+     "leaked_share": 0.5540860671191553,
+     "benign_event_fp": 0.19636363636363635,
+     "benign_person_fp": 0.3246753246753247,
+     "fp_by_kind": {
+      "life-event": 0.6363636363636364,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.5
+     },
+     "victim_benign_blocked": 0.4109375
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7061090686274509,
+     "benign_event_fp": 0.07272727272727272,
+     "benign_person_fp": 0.16883116883116883,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.21875
+     },
+     "victim_benign_blocked": 0.2828125
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7279319852941176,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.55,
+     "detected": 0.55,
+     "leaked_share": 0.7958486519607844,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.178125
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.4375,
+     "detected": 0.4375,
+     "leaked_share": 0.8612254901960784,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1234375
+    },
+    "1.0": {
+     "campaigns": 80,
+     "prevented": 0.4125,
+     "detected": 0.4125,
+     "leaked_share": 0.903860294117647,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1
+    },
+    "1.2": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "max": {
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9125,
+     "detected": 0.925,
+     "leaked_share": 0.5540860671191553,
+     "benign_event_fp": 0.19636363636363635,
+     "benign_person_fp": 0.3246753246753247,
+     "fp_by_kind": {
+      "life-event": 0.6363636363636364,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.5
+     },
+     "victim_benign_blocked": 0.4109375
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7061090686274509,
+     "benign_event_fp": 0.07272727272727272,
+     "benign_person_fp": 0.16883116883116883,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.21875
+     },
+     "victim_benign_blocked": 0.2828125
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7375,
+     "leaked_share": 0.7279319852941176,
+     "benign_event_fp": 0.05818181818181818,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.271875
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.55,
+     "detected": 0.55,
+     "leaked_share": 0.7958486519607844,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.178125
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.4375,
+     "detected": 0.4375,
+     "leaked_share": 0.8612254901960784,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1234375
+    },
+    "1.0": {
+     "campaigns": 80,
+     "prevented": 0.4125,
+     "detected": 0.4125,
+     "leaked_share": 0.903860294117647,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1
+    },
+    "1.2": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "sum": {
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9375,
+     "detected": 0.95,
+     "leaked_share": 0.46010037450294805,
+     "benign_event_fp": 0.3527272727272727,
+     "benign_person_fp": 0.45454545454545453,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.14705882352941177,
+      "typical": 0.5625
+     },
+     "victim_benign_blocked": 0.5921875
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7875,
+     "detected": 0.8125,
+     "leaked_share": 0.5788034973604826,
+     "benign_event_fp": 0.26181818181818184,
+     "benign_person_fp": 0.38961038961038963,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.4375
+     },
+     "victim_benign_blocked": 0.49375
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7875,
+     "detected": 0.8125,
+     "leaked_share": 0.590261830693816,
+     "benign_event_fp": 0.2509090909090909,
+     "benign_person_fp": 0.38961038961038963,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.4375
+     },
+     "victim_benign_blocked": 0.4703125
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.6875,
+     "detected": 0.7125,
+     "leaked_share": 0.6511913178733032,
+     "benign_event_fp": 0.19636363636363635,
+     "benign_person_fp": 0.3116883116883117,
+     "fp_by_kind": {
+      "life-event": 0.5454545454545454,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.375
+     },
+     "victim_benign_blocked": 0.440625
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.6625,
+     "detected": 0.6875,
+     "leaked_share": 0.711599971719457,
+     "benign_event_fp": 0.09818181818181818,
+     "benign_person_fp": 0.15584415584415584,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.625,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.3484375
+    },
+    "1.0": {
+     "campaigns": 80,
+     "prevented": 0.65,
+     "detected": 0.675,
+     "leaked_share": 0.7549069098793363,
+     "benign_event_fp": 0.07636363636363637,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.09090909090909091,
+      "overlap-kyc": 0.625,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.2953125
+    },
+    "1.2": {
+     "campaigns": 80,
+     "prevented": 0.4875,
+     "detected": 0.525,
+     "leaked_share": 0.8576225490196079,
+     "benign_event_fp": 0.04727272727272727,
+     "benign_person_fp": 0.09090909090909091,
+     "fp_by_kind": {
+      "life-event": 0.09090909090909091,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.125
+     },
+     "victim_benign_blocked": 0.1953125
+    }
+   }
+  }
+ },
+ "qwen/qwen3-4b+def-spotlight": {
+  "scorer": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.7111111111111111,
+     "recall": 0.8421052631578947,
+     "f1": 0.7710843373493975,
+     "support": 76
+    },
+    "all": {
+     "precision": 0.7111111111111111,
+     "recall": 0.8421052631578947,
+     "f1": 0.7710843373493975,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 0.8809523809523809,
+     "recall": 0.8409090909090909,
+     "f1": 0.8604651162790699,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 0.7714285714285715,
+     "recall": 0.9642857142857143,
+     "f1": 0.8571428571428572,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 0.5714285714285714,
+     "recall": 1.0,
+     "f1": 0.7272727272727273,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 0.5,
+     "recall": 0.3333333333333333,
+     "f1": 0.4,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 0.7272727272727273,
+     "recall": 1.0,
+     "f1": 0.8421052631578948,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 0.7142857142857143,
+     "recall": 1.0,
+     "f1": 0.8333333333333333,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.7,
+     "recall": 1.0,
+     "f1": 0.8235294117647058,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 0.75,
+     "recall": 1.0,
+     "f1": 0.8571428571428571,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.7111111111111111,
+     "recall": 0.8421052631578947,
+     "f1": 0.7710843373493975,
+     "support": 76
+    },
+    "name only": {
+     "precision": 0.5625,
+     "recall": 0.84375,
+     "f1": 0.675,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 0.6756756756756757,
+     "recall": 0.9259259259259259,
+     "f1": 0.7812500000000001,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 0.7777777777777778,
+     "recall": 0.875,
+     "f1": 0.823529411764706,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 0.6923076923076923,
+     "recall": 0.72,
+     "f1": 0.7058823529411765,
+     "support": 25
+    }
+   },
+   "linkage": 0.8333333333333334,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 2.6445,
+   "latency_p95": 3.53
+  }
+ },
+ "qwen/qwen3-4b+def-spotlight+def-floor-name": {
+  "scorer": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.9367088607594937,
+     "recall": 0.9736842105263158,
+     "f1": 0.9548387096774194,
+     "support": 76
+    },
+    "all": {
+     "precision": 0.9367088607594937,
+     "recall": 0.9736842105263158,
+     "f1": 0.9548387096774194,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 0.8936170212765957,
+     "recall": 0.9545454545454546,
+     "f1": 0.9230769230769231,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 0.9642857142857143,
+     "recall": 0.9642857142857143,
+     "f1": 0.9642857142857143,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 0.8461538461538461,
+     "recall": 0.9166666666666666,
+     "f1": 0.8799999999999999,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.7777777777777778,
+     "recall": 1.0,
+     "f1": 0.8750000000000001,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.9367088607594937,
+     "recall": 0.9736842105263158,
+     "f1": 0.9548387096774194,
+     "support": 76
+    },
+    "name only": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 0.9,
+     "recall": 1.0,
+     "f1": 0.9473684210526316,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 0.92,
+     "recall": 0.9583333333333334,
+     "f1": 0.9387755102040817,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 1.0,
+     "recall": 0.96,
+     "f1": 0.9795918367346939,
+     "support": 25
+    }
+   },
+   "linkage": 0.95,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 2.6445,
+   "latency_p95": 3.53
+  }
+ },
+ "qwen/qwen3-32b": {
+  "scorer": {
+   "events": 2025,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.917098445595855,
+     "recall": 0.9649532710280374,
+     "f1": 0.9404174573055029,
+     "support": 1284
+    },
+    "actor:benign": {
+     "precision": 0.8591772151898734,
+     "recall": 0.9990800367985281,
+     "f1": 0.9238621863037005,
+     "support": 1087
+    },
+    "all": {
+     "precision": 0.8891013384321224,
+     "recall": 0.9805989034162801,
+     "f1": 0.9326113116726834,
+     "support": 2371
+    },
+    "all excl. name": {
+     "precision": 0.9956958393113343,
+     "recall": 0.9886039886039886,
+     "f1": 0.9921372408863474,
+     "support": 1404
+    },
+    "inj:auditor-note": {
+     "precision": 0.9,
+     "recall": 0.32142857142857145,
+     "f1": 0.4736842105263158,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 0.5714285714285714,
+     "recall": 1.0,
+     "f1": 0.7272727272727273,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571428571428571,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 0.8,
+     "recall": 0.5,
+     "f1": 0.6153846153846154,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.5,
+     "recall": 0.14285714285714285,
+     "f1": 0.22222222222222224,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 1.0,
+     "recall": 0.3333333333333333,
+     "f1": 0.5,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.84,
+     "recall": 0.5526315789473685,
+     "f1": 0.6666666666666667,
+     "support": 76
+    },
+    "name only": {
+     "precision": 0.7674037674037674,
+     "recall": 0.9689762150982419,
+     "f1": 0.856489945155393,
+     "support": 967
+    },
+    "style:direct": {
+     "precision": 0.8421052631578947,
+     "recall": 0.9860834990059643,
+     "f1": 0.9084249084249083,
+     "support": 1006
+    },
+    "style:inferable": {
+     "precision": 0.9241245136186771,
+     "recall": 0.9634888438133874,
+     "f1": 0.9433962264150945,
+     "support": 493
+    },
+    "style:none": {
+     "precision": NaN,
+     "recall": NaN,
+     "f1": NaN,
+     "support": 0
+    },
+    "style:paraphrase": {
+     "precision": 0.9295774647887324,
+     "recall": 0.9839449541284404,
+     "f1": 0.9559888579387186,
+     "support": 872
+    }
+   },
+   "linkage": 0.967990515708358,
+   "stage1_exit": 0.07654320987654321,
+   "errors": 0,
+   "latency_mean": 14.89735294117647,
+   "latency_p95": 23.45
+  },
+  "rq1": {
+   "D0 per-request (limit 0.6)": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0036363636363636364,
+     "benign_person_fp": 0.012987012987012988,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0036363636363636364,
+     "benign_person_fp": 0.012987012987012988,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0036363636363636364,
+     "benign_person_fp": 0.012987012987012988,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0036363636363636364,
+     "benign_person_fp": 0.012987012987012988,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0036363636363636364,
+     "benign_person_fp": 0.012987012987012988,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0036363636363636364,
+     "benign_person_fp": 0.012987012987012988,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D_session per-session": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D1 per-account": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.075,
+     "detected": 0.1125,
+     "leaked_share": 0.9808333333333333,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.0,
+     "detected": 0.15,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D_traj per-account trajectory (30 d)": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.075,
+     "detected": 0.1125,
+     "leaked_share": 0.9808333333333333,
+     "benign_event_fp": 0.8109090909090909,
+     "benign_person_fp": 0.961038961038961,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.8529411764705882,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.778125
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.8109090909090909,
+     "benign_person_fp": 0.961038961038961,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.8529411764705882,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.778125
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.8109090909090909,
+     "benign_person_fp": 0.961038961038961,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.8529411764705882,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.778125
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.8109090909090909,
+     "benign_person_fp": 0.961038961038961,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.8529411764705882,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.778125
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.8109090909090909,
+     "benign_person_fp": 0.961038961038961,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.8529411764705882,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.778125
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.0,
+     "detected": 0.15,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.8109090909090909,
+     "benign_person_fp": 0.961038961038961,
+     "fp_by_kind": {
+      "life-event": 1.0,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.8529411764705882,
+      "typical": 1.0
+     },
+     "victim_benign_blocked": 0.778125
+    }
+   },
+   "D2 per-org": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.175,
+     "detected": 0.2125,
+     "leaked_share": 0.9502573529411765,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0375
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0375
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4,
+     "detected": 0.4,
+     "leaked_share": 0.888888888888889,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0375
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.13333333333333333,
+     "detected": 0.13333333333333333,
+     "leaked_share": 0.9733333333333334,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0375
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 0.06666666666666667,
+     "detected": 0.06666666666666667,
+     "leaked_share": 0.9647058823529412,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0375
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.05,
+     "detected": 0.2,
+     "leaked_share": 0.9875,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0375
+    }
+   },
+   "D3 federated (or)": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7487898284313725,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8622222222222222,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.9333333333333333,
+     "detected": 0.9333333333333333,
+     "leaked_share": 0.6388888888888888,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6170098039215686,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.85,
+     "detected": 0.85,
+     "leaked_share": 0.7132352941176471,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    }
+   },
+   "D3c centralised (or)": {
+    "all": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7487898284313725,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S1 one-org one-account": {
+     "campaigns": 15,
+     "prevented": 0.26666666666666666,
+     "detected": 0.26666666666666666,
+     "leaked_share": 0.9244444444444444,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S2 one-org sybil": {
+     "campaigns": 15,
+     "prevented": 0.4666666666666667,
+     "detected": 0.4666666666666667,
+     "leaked_share": 0.8622222222222222,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S3 cross-org": {
+     "campaigns": 15,
+     "prevented": 0.9333333333333333,
+     "detected": 0.9333333333333333,
+     "leaked_share": 0.6388888888888888,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S4 cross-org sybil slow": {
+     "campaigns": 15,
+     "prevented": 1.0,
+     "detected": 1.0,
+     "leaked_share": 0.6170098039215686,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "S5 cross-org redundant": {
+     "campaigns": 20,
+     "prevented": 0.85,
+     "detected": 0.85,
+     "leaked_share": 0.7132352941176471,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    }
+   }
+  },
+  "rq1_sweep": {
+   "D1 per-account": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.75,
+     "detected": 0.7875,
+     "leaked_share": 0.7295029480323598,
+     "benign_event_fp": 0.04363636363636364,
+     "benign_person_fp": 0.14285714285714285,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.15625
+     },
+     "victim_benign_blocked": 0.03125
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.5125,
+     "detected": 0.6,
+     "leaked_share": 0.8286460475798711,
+     "benign_event_fp": 0.01818181818181818,
+     "benign_person_fp": 0.05194805194805195,
+     "fp_by_kind": {
+      "life-event": 0.2727272727272727,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0171875
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.2625,
+     "detected": 0.375,
+     "leaked_share": 0.937275641025641,
+     "benign_event_fp": 0.0036363636363636364,
+     "benign_person_fp": 0.012987012987012988,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0015625
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.1875,
+     "detected": 0.2625,
+     "leaked_share": 0.9539423076923077,
+     "benign_event_fp": 0.0036363636363636364,
+     "benign_person_fp": 0.012987012987012988,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0015625
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.075,
+     "detected": 0.1125,
+     "leaked_share": 0.9808333333333333,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.075,
+     "detected": 0.1125,
+     "leaked_share": 0.9808333333333333,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D2 per-org": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.9375,
+     "detected": 0.9625,
+     "leaked_share": 0.600891679807121,
+     "benign_event_fp": 0.24,
+     "benign_person_fp": 0.45454545454545453,
+     "fp_by_kind": {
+      "life-event": 0.7272727272727273,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.11764705882352941,
+      "typical": 0.65625
+     },
+     "victim_benign_blocked": 0.3421875
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.675,
+     "detected": 0.7625,
+     "leaked_share": 0.7532079348347731,
+     "benign_event_fp": 0.13090909090909092,
+     "benign_person_fp": 0.2727272727272727,
+     "fp_by_kind": {
+      "life-event": 0.6363636363636364,
+      "overlap-kyc": 0.25,
+      "overlap-moved": 0.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.3125
+     },
+     "victim_benign_blocked": 0.228125
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.45,
+     "detected": 0.55,
+     "leaked_share": 0.887508484162896,
+     "benign_event_fp": 0.03272727272727273,
+     "benign_person_fp": 0.06493506493506493,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.125
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.3125,
+     "detected": 0.3875,
+     "leaked_share": 0.9179251508295626,
+     "benign_event_fp": 0.025454545454545455,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0671875
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.175,
+     "detected": 0.2125,
+     "leaked_share": 0.9502573529411765,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0375
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.175,
+     "detected": 0.2125,
+     "leaked_share": 0.9502573529411765,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0375
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "D3 or": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.975,
+     "detected": 0.975,
+     "leaked_share": 0.3625140402897756,
+     "benign_event_fp": 0.37454545454545457,
+     "benign_person_fp": 0.5714285714285714,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.14705882352941177,
+      "typical": 0.875
+     },
+     "victim_benign_blocked": 0.5203125
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.47027972027972026,
+     "benign_event_fp": 0.2290909090909091,
+     "benign_person_fp": 0.36363636363636365,
+     "fp_by_kind": {
+      "life-event": 0.7272727272727273,
+      "overlap-kyc": 0.25,
+      "overlap-moved": 0.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.53125
+     },
+     "victim_benign_blocked": 0.4390625
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.6021139705882352,
+     "benign_event_fp": 0.10909090909090909,
+     "benign_person_fp": 0.18181818181818182,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.25
+     },
+     "victim_benign_blocked": 0.35625
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.7875,
+     "detected": 0.7875,
+     "leaked_share": 0.6419577205882353,
+     "benign_event_fp": 0.08727272727272728,
+     "benign_person_fp": 0.12987012987012986,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.15625
+     },
+     "victim_benign_blocked": 0.3046875
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7200919117647059,
+     "benign_event_fp": 0.03272727272727273,
+     "benign_person_fp": 0.05194805194805195,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.2546875
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7487898284313725,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.525,
+     "detected": 0.5375,
+     "leaked_share": 0.8167310049019608,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1671875
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.45,
+     "detected": 0.475,
+     "leaked_share": 0.850453431372549,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1609375
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.4125,
+     "detected": 0.425,
+     "leaked_share": 0.8777328431372549,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1265625
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.3875,
+     "detected": 0.4,
+     "leaked_share": 0.9247426470588235,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1015625
+    }
+   },
+   "D3 or, 90-day window": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.975,
+     "detected": 0.975,
+     "leaked_share": 0.3625140402897756,
+     "benign_event_fp": 0.33090909090909093,
+     "benign_person_fp": 0.5324675324675324,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.11764705882352941,
+      "typical": 0.84375
+     },
+     "victim_benign_blocked": 0.48125
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.47027972027972026,
+     "benign_event_fp": 0.19272727272727272,
+     "benign_person_fp": 0.3116883116883117,
+     "fp_by_kind": {
+      "life-event": 0.7272727272727273,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.4375
+     },
+     "victim_benign_blocked": 0.3984375
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.6021139705882352,
+     "benign_event_fp": 0.09454545454545454,
+     "benign_person_fp": 0.15584415584415584,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.1875
+     },
+     "victim_benign_blocked": 0.309375
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.7875,
+     "detected": 0.7875,
+     "leaked_share": 0.6419577205882353,
+     "benign_event_fp": 0.07636363636363637,
+     "benign_person_fp": 0.11688311688311688,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.125
+     },
+     "victim_benign_blocked": 0.25625
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7200919117647059,
+     "benign_event_fp": 0.03272727272727273,
+     "benign_person_fp": 0.05194805194805195,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.215625
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7487898284313725,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2015625
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.525,
+     "detected": 0.5375,
+     "leaked_share": 0.8167310049019608,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1453125
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.425,
+     "detected": 0.45,
+     "leaked_share": 0.856078431372549,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1328125
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.3875,
+     "detected": 0.4,
+     "leaked_share": 0.8833578431372549,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1015625
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.375,
+     "detected": 0.3875,
+     "leaked_share": 0.9278676470588235,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.08125
+    }
+   },
+   "D3 or, 30-day window": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.975,
+     "detected": 0.975,
+     "leaked_share": 0.4021862216623246,
+     "benign_event_fp": 0.23636363636363636,
+     "benign_person_fp": 0.38961038961038963,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.5625
+     },
+     "victim_benign_blocked": 0.3421875
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.925,
+     "detected": 0.925,
+     "leaked_share": 0.5315431535376388,
+     "benign_event_fp": 0.14181818181818182,
+     "benign_person_fp": 0.2077922077922078,
+     "fp_by_kind": {
+      "life-event": 0.7272727272727273,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.21875
+     },
+     "victim_benign_blocked": 0.2765625
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.825,
+     "detected": 0.825,
+     "leaked_share": 0.6845538744343891,
+     "benign_event_fp": 0.06181818181818182,
+     "benign_person_fp": 0.07792207792207792,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.184375
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.675,
+     "detected": 0.675,
+     "leaked_share": 0.7306476244343891,
+     "benign_event_fp": 0.05090909090909091,
+     "benign_person_fp": 0.06493506493506493,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1359375
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.575,
+     "detected": 0.575,
+     "leaked_share": 0.8049724264705882,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1015625
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.5625,
+     "detected": 0.5625,
+     "leaked_share": 0.820857843137255,
+     "benign_event_fp": 0.02181818181818182,
+     "benign_person_fp": 0.025974025974025976,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.090625
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.3875,
+     "detected": 0.4,
+     "leaked_share": 0.8771078431372549,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.05
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.3375,
+     "detected": 0.3625,
+     "leaked_share": 0.8987990196078431,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.046875
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.3,
+     "detected": 0.3125,
+     "leaked_share": 0.9204901960784314,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0234375
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.275,
+     "detected": 0.3,
+     "leaked_share": 0.9562499999999999,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0140625
+    }
+   },
+   "D3 or, not sticky": {
+    "0.4": {
+     "campaigns": 80,
+     "prevented": 0.975,
+     "detected": 0.975,
+     "leaked_share": 0.4368607597467892,
+     "benign_event_fp": 0.2909090909090909,
+     "benign_person_fp": 0.5714285714285714,
+     "fp_by_kind": {
+      "life-event": 0.9090909090909091,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.14705882352941177,
+      "typical": 0.875
+     },
+     "victim_benign_blocked": 0.3734375
+    },
+    "0.5": {
+     "campaigns": 80,
+     "prevented": 0.95,
+     "detected": 0.95,
+     "leaked_share": 0.5461573597970657,
+     "benign_event_fp": 0.1709090909090909,
+     "benign_person_fp": 0.36363636363636365,
+     "fp_by_kind": {
+      "life-event": 0.7272727272727273,
+      "overlap-kyc": 0.25,
+      "overlap-moved": 0.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.5
+     },
+     "victim_benign_blocked": 0.2671875
+    },
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.6702830411010559,
+     "benign_event_fp": 0.06545454545454546,
+     "benign_person_fp": 0.18181818181818182,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.21875
+     },
+     "victim_benign_blocked": 0.16875
+    },
+    "0.65": {
+     "campaigns": 80,
+     "prevented": 0.7875,
+     "detected": 0.7875,
+     "leaked_share": 0.7203872077677225,
+     "benign_event_fp": 0.05090909090909091,
+     "benign_person_fp": 0.12987012987012986,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.125
+     },
+     "victim_benign_blocked": 0.1546875
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7779044117647059,
+     "benign_event_fp": 0.01818181818181818,
+     "benign_person_fp": 0.05194805194805195,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.1078125
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7910814950980393,
+     "benign_event_fp": 0.014545454545454545,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.103125
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.525,
+     "detected": 0.525,
+     "leaked_share": 0.8600398284313725,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0671875
+    },
+    "0.85": {
+     "campaigns": 80,
+     "prevented": 0.4375,
+     "detected": 0.4625,
+     "leaked_share": 0.8987622549019608,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.053125
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.4,
+     "detected": 0.425,
+     "leaked_share": 0.9154901960784314,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0359375
+    },
+    "0.95": {
+     "campaigns": 80,
+     "prevented": 0.3875,
+     "detected": 0.4,
+     "leaked_share": 0.9385294117647058,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.025
+    }
+   }
+  },
+  "rq2": {
+   "or": {
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.6021139705882352,
+     "benign_event_fp": 0.10909090909090909,
+     "benign_person_fp": 0.18181818181818182,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.25
+     },
+     "victim_benign_blocked": 0.35625
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7200919117647059,
+     "benign_event_fp": 0.03272727272727273,
+     "benign_person_fp": 0.05194805194805195,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.2546875
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7487898284313725,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.525,
+     "detected": 0.5375,
+     "leaked_share": 0.8167310049019608,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1671875
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.4125,
+     "detected": 0.425,
+     "leaked_share": 0.8777328431372549,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1265625
+    },
+    "1.0": {
+     "campaigns": 80,
+     "prevented": 0.3875,
+     "detected": 0.4,
+     "leaked_share": 0.9247426470588235,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1015625
+    },
+    "1.2": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "max": {
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.9,
+     "detected": 0.9,
+     "leaked_share": 0.6021139705882352,
+     "benign_event_fp": 0.10909090909090909,
+     "benign_person_fp": 0.18181818181818182,
+     "fp_by_kind": {
+      "life-event": 0.45454545454545453,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.029411764705882353,
+      "typical": 0.25
+     },
+     "victim_benign_blocked": 0.35625
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7200919117647059,
+     "benign_event_fp": 0.03272727272727273,
+     "benign_person_fp": 0.05194805194805195,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0625
+     },
+     "victim_benign_blocked": 0.2546875
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.7125,
+     "detected": 0.7125,
+     "leaked_share": 0.7487898284313725,
+     "benign_event_fp": 0.02909090909090909,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.03125
+     },
+     "victim_benign_blocked": 0.2453125
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.525,
+     "detected": 0.5375,
+     "leaked_share": 0.8167310049019608,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1671875
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.4125,
+     "detected": 0.425,
+     "leaked_share": 0.8777328431372549,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1265625
+    },
+    "1.0": {
+     "campaigns": 80,
+     "prevented": 0.3875,
+     "detected": 0.4,
+     "leaked_share": 0.9247426470588235,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.1015625
+    },
+    "1.2": {
+     "campaigns": 80,
+     "prevented": 0.0,
+     "detected": 0.0,
+     "leaked_share": 1.0,
+     "benign_event_fp": 0.0,
+     "benign_person_fp": 0.0,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.0,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.0
+     },
+     "victim_benign_blocked": 0.0
+    }
+   },
+   "sum": {
+    "0.6": {
+     "campaigns": 80,
+     "prevented": 0.925,
+     "detected": 0.925,
+     "leaked_share": 0.5291699446386946,
+     "benign_event_fp": 0.28,
+     "benign_person_fp": 0.38961038961038963,
+     "fp_by_kind": {
+      "life-event": 0.8181818181818182,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.14705882352941177,
+      "typical": 0.40625
+     },
+     "victim_benign_blocked": 0.509375
+    },
+    "0.7": {
+     "campaigns": 80,
+     "prevented": 0.7875,
+     "detected": 0.8,
+     "leaked_share": 0.6220958239064857,
+     "benign_event_fp": 0.1890909090909091,
+     "benign_person_fp": 0.2727272727272727,
+     "fp_by_kind": {
+      "life-event": 0.6363636363636364,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.25
+     },
+     "victim_benign_blocked": 0.43125
+    },
+    "0.75": {
+     "campaigns": 80,
+     "prevented": 0.775,
+     "detected": 0.7875,
+     "leaked_share": 0.637772907239819,
+     "benign_event_fp": 0.17454545454545456,
+     "benign_person_fp": 0.2727272727272727,
+     "fp_by_kind": {
+      "life-event": 0.6363636363636364,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.25
+     },
+     "victim_benign_blocked": 0.4125
+    },
+    "0.8": {
+     "campaigns": 80,
+     "prevented": 0.7,
+     "detected": 0.7125,
+     "leaked_share": 0.7041661953242836,
+     "benign_event_fp": 0.12727272727272726,
+     "benign_person_fp": 0.22077922077922077,
+     "fp_by_kind": {
+      "life-event": 0.36363636363636365,
+      "overlap-kyc": 1.0,
+      "overlap-moved": 1.0,
+      "quiet": 0.08823529411764706,
+      "typical": 0.21875
+     },
+     "victim_benign_blocked": 0.3921875
+    },
+    "0.9": {
+     "campaigns": 80,
+     "prevented": 0.625,
+     "detected": 0.65,
+     "leaked_share": 0.7638579374057315,
+     "benign_event_fp": 0.06545454545454546,
+     "benign_person_fp": 0.12987012987012986,
+     "fp_by_kind": {
+      "life-event": 0.18181818181818182,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.15625
+     },
+     "victim_benign_blocked": 0.296875
+    },
+    "1.0": {
+     "campaigns": 80,
+     "prevented": 0.6,
+     "detected": 0.6125,
+     "leaked_share": 0.7960374245852186,
+     "benign_event_fp": 0.05090909090909091,
+     "benign_person_fp": 0.1038961038961039,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.375,
+      "overlap-moved": 0.0,
+      "quiet": 0.058823529411764705,
+      "typical": 0.15625
+     },
+     "victim_benign_blocked": 0.2625
+    },
+    "1.2": {
+     "campaigns": 80,
+     "prevented": 0.375,
+     "detected": 0.4375,
+     "leaked_share": 0.9005361519607843,
+     "benign_event_fp": 0.01818181818181818,
+     "benign_person_fp": 0.03896103896103896,
+     "fp_by_kind": {
+      "life-event": 0.0,
+      "overlap-kyc": 0.125,
+      "overlap-moved": 0.0,
+      "quiet": 0.0,
+      "typical": 0.09375
+     },
+     "victim_benign_blocked": 0.1671875
+    }
+   }
+  }
+ },
+ "qwen/qwen3-32b+def-spotlight": {
+  "scorer": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.8412698412698413,
+     "recall": 0.6973684210526315,
+     "f1": 0.7625899280575539,
+     "support": 76
+    },
+    "all": {
+     "precision": 0.8412698412698413,
+     "recall": 0.6973684210526315,
+     "f1": 0.7625899280575539,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 1.0,
+     "recall": 0.7727272727272727,
+     "f1": 0.8717948717948718,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 0.9375,
+     "recall": 0.5357142857142857,
+     "f1": 0.6818181818181818,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 0.6666666666666666,
+     "recall": 1.0,
+     "f1": 0.8,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 0.9,
+     "recall": 0.75,
+     "f1": 0.8181818181818182,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 0.8,
+     "recall": 1.0,
+     "f1": 0.888888888888889,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.75,
+     "recall": 0.42857142857142855,
+     "f1": 0.5454545454545454,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 0.75,
+     "recall": 1.0,
+     "f1": 0.8571428571428571,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.8412698412698413,
+     "recall": 0.6973684210526315,
+     "f1": 0.7625899280575539,
+     "support": 76
+    },
+    "name only": {
+     "precision": 0.6551724137931034,
+     "recall": 0.59375,
+     "f1": 0.6229508196721311,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 0.9130434782608695,
+     "recall": 0.7777777777777778,
+     "f1": 0.84,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 0.8,
+     "recall": 0.6666666666666666,
+     "f1": 0.7272727272727272,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 0.8,
+     "recall": 0.64,
+     "f1": 0.7111111111111111,
+     "support": 25
+    }
+   },
+   "linkage": 0.6166666666666667,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 15.010166666666667,
+   "latency_p95": 19.69
+  }
+ },
+ "qwen/qwen3-32b+def-spotlight+def-floor-name": {
+  "scorer": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 1.0,
+     "recall": 0.9736842105263158,
+     "f1": 0.9866666666666666,
+     "support": 76
+    },
+    "all": {
+     "precision": 1.0,
+     "recall": 0.9736842105263158,
+     "f1": 0.9866666666666666,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 1.0,
+     "recall": 0.9545454545454546,
+     "f1": 0.9767441860465117,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 1.0,
+     "recall": 0.9285714285714286,
+     "f1": 0.962962962962963,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "injection": {
+     "precision": 1.0,
+     "recall": 0.9736842105263158,
+     "f1": 0.9866666666666666,
+     "support": 76
+    },
+    "name only": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 1.0,
+     "recall": 0.9166666666666666,
+     "f1": 0.9565217391304348,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 25
+    }
+   },
+   "linkage": 0.9333333333333333,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 15.010166666666667,
+   "latency_p95": 19.69
+  }
+ },
+ "rq4_common": {
+  "qwen/qwen3-4b": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.7301587301587301,
+     "recall": 0.6052631578947368,
+     "f1": 0.6618705035971223,
+     "support": 76
+    },
+    "all": {
+     "precision": 0.7301587301587301,
+     "recall": 0.6052631578947368,
+     "f1": 0.6618705035971223,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 0.8787878787878788,
+     "recall": 0.6590909090909091,
+     "f1": 0.7532467532467532,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 0.8235294117647058,
+     "recall": 0.5,
+     "f1": 0.6222222222222222,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 0.6666666666666666,
+     "recall": 1.0,
+     "f1": 0.8,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 0.625,
+     "recall": 1.0,
+     "f1": 0.7692307692307693,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.875,
+     "recall": 1.0,
+     "f1": 0.9333333333333333,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 0.75,
+     "recall": 1.0,
+     "f1": 0.8571428571428571,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.7301587301587301,
+     "recall": 0.6052631578947368,
+     "f1": 0.6618705035971223,
+     "support": 76
+    },
+    "name only": {
+     "precision": 0.5666666666666667,
+     "recall": 0.53125,
+     "f1": 0.5483870967741935,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 0.75,
+     "recall": 0.6666666666666666,
+     "f1": 0.7058823529411765,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 0.7619047619047619,
+     "recall": 0.6666666666666666,
+     "f1": 0.7111111111111111,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 0.6666666666666666,
+     "recall": 0.48,
+     "f1": 0.5581395348837209,
+     "support": 25
+    }
+   },
+   "linkage": 0.7,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 4.4206666666666665,
+   "latency_p95": 12.25
+  },
+  "qwen/qwen3-4b+def-spotlight": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.7111111111111111,
+     "recall": 0.8421052631578947,
+     "f1": 0.7710843373493975,
+     "support": 76
+    },
+    "all": {
+     "precision": 0.7111111111111111,
+     "recall": 0.8421052631578947,
+     "f1": 0.7710843373493975,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 0.8809523809523809,
+     "recall": 0.8409090909090909,
+     "f1": 0.8604651162790699,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 0.7714285714285715,
+     "recall": 0.9642857142857143,
+     "f1": 0.8571428571428572,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 0.5714285714285714,
+     "recall": 1.0,
+     "f1": 0.7272727272727273,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 0.5,
+     "recall": 0.3333333333333333,
+     "f1": 0.4,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 0.7272727272727273,
+     "recall": 1.0,
+     "f1": 0.8421052631578948,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 0.7142857142857143,
+     "recall": 1.0,
+     "f1": 0.8333333333333333,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.7,
+     "recall": 1.0,
+     "f1": 0.8235294117647058,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 0.75,
+     "recall": 1.0,
+     "f1": 0.8571428571428571,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.7111111111111111,
+     "recall": 0.8421052631578947,
+     "f1": 0.7710843373493975,
+     "support": 76
+    },
+    "name only": {
+     "precision": 0.5625,
+     "recall": 0.84375,
+     "f1": 0.675,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 0.6756756756756757,
+     "recall": 0.9259259259259259,
+     "f1": 0.7812500000000001,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 0.7777777777777778,
+     "recall": 0.875,
+     "f1": 0.823529411764706,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 0.6923076923076923,
+     "recall": 0.72,
+     "f1": 0.7058823529411765,
+     "support": 25
+    }
+   },
+   "linkage": 0.8333333333333334,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 2.6445,
+   "latency_p95": 3.53
+  },
+  "qwen/qwen3-4b+def-spotlight+def-floor-name": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.9367088607594937,
+     "recall": 0.9736842105263158,
+     "f1": 0.9548387096774194,
+     "support": 76
+    },
+    "all": {
+     "precision": 0.9367088607594937,
+     "recall": 0.9736842105263158,
+     "f1": 0.9548387096774194,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 0.8936170212765957,
+     "recall": 0.9545454545454546,
+     "f1": 0.9230769230769231,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 0.9642857142857143,
+     "recall": 0.9642857142857143,
+     "f1": 0.9642857142857143,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 0.8461538461538461,
+     "recall": 0.9166666666666666,
+     "f1": 0.8799999999999999,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.7777777777777778,
+     "recall": 1.0,
+     "f1": 0.8750000000000001,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.9367088607594937,
+     "recall": 0.9736842105263158,
+     "f1": 0.9548387096774194,
+     "support": 76
+    },
+    "name only": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 0.9,
+     "recall": 1.0,
+     "f1": 0.9473684210526316,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 0.92,
+     "recall": 0.9583333333333334,
+     "f1": 0.9387755102040817,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 1.0,
+     "recall": 0.96,
+     "f1": 0.9795918367346939,
+     "support": 25
+    }
+   },
+   "linkage": 0.95,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 2.6445,
+   "latency_p95": 3.53
+  },
+  "qwen/qwen3-32b": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.84,
+     "recall": 0.5526315789473685,
+     "f1": 0.6666666666666667,
+     "support": 76
+    },
+    "all": {
+     "precision": 0.84,
+     "recall": 0.5526315789473685,
+     "f1": 0.6666666666666667,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 1.0,
+     "recall": 0.6363636363636364,
+     "f1": 0.7777777777777778,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 0.9,
+     "recall": 0.32142857142857145,
+     "f1": 0.4736842105263158,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 0.5714285714285714,
+     "recall": 1.0,
+     "f1": 0.7272727272727273,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571428571428571,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 0.8,
+     "recall": 0.5,
+     "f1": 0.6153846153846154,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.5,
+     "recall": 0.14285714285714285,
+     "f1": 0.22222222222222224,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 1.0,
+     "recall": 0.3333333333333333,
+     "f1": 0.5,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.84,
+     "recall": 0.5526315789473685,
+     "f1": 0.6666666666666667,
+     "support": 76
+    },
+    "name only": {
+     "precision": 0.6363636363636364,
+     "recall": 0.4375,
+     "f1": 0.5185185185185185,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 0.8947368421052632,
+     "recall": 0.6296296296296297,
+     "f1": 0.7391304347826088,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 0.8333333333333334,
+     "recall": 0.4166666666666667,
+     "f1": 0.5555555555555556,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 0.7894736842105263,
+     "recall": 0.6,
+     "f1": 0.6818181818181819,
+     "support": 25
+    }
+   },
+   "linkage": 0.5166666666666667,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 13.048666666666668,
+   "latency_p95": 16.04
+  },
+  "qwen/qwen3-32b+def-spotlight": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 0.8412698412698413,
+     "recall": 0.6973684210526315,
+     "f1": 0.7625899280575539,
+     "support": 76
+    },
+    "all": {
+     "precision": 0.8412698412698413,
+     "recall": 0.6973684210526315,
+     "f1": 0.7625899280575539,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 1.0,
+     "recall": 0.7727272727272727,
+     "f1": 0.8717948717948718,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 0.9375,
+     "recall": 0.5357142857142857,
+     "f1": 0.6818181818181818,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 0.6666666666666666,
+     "recall": 1.0,
+     "f1": 0.8,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 0.9,
+     "recall": 0.75,
+     "f1": 0.8181818181818182,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 0.8,
+     "recall": 1.0,
+     "f1": 0.888888888888889,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 0.75,
+     "recall": 0.42857142857142855,
+     "f1": 0.5454545454545454,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 0.75,
+     "recall": 1.0,
+     "f1": 0.8571428571428571,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": NaN,
+     "recall": 0.0,
+     "f1": NaN,
+     "support": 3
+    },
+    "injection": {
+     "precision": 0.8412698412698413,
+     "recall": 0.6973684210526315,
+     "f1": 0.7625899280575539,
+     "support": 76
+    },
+    "name only": {
+     "precision": 0.6551724137931034,
+     "recall": 0.59375,
+     "f1": 0.6229508196721311,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 0.9130434782608695,
+     "recall": 0.7777777777777778,
+     "f1": 0.84,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 0.8,
+     "recall": 0.6666666666666666,
+     "f1": 0.7272727272727272,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 0.8,
+     "recall": 0.64,
+     "f1": 0.7111111111111111,
+     "support": 25
+    }
+   },
+   "linkage": 0.6166666666666667,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 15.010166666666667,
+   "latency_p95": 19.69
+  },
+  "qwen/qwen3-32b+def-spotlight+def-floor-name": {
+   "events": 60,
+   "fields": {
+    "actor:attacker": {
+     "precision": 1.0,
+     "recall": 0.9736842105263158,
+     "f1": 0.9866666666666666,
+     "support": 76
+    },
+    "all": {
+     "precision": 1.0,
+     "recall": 0.9736842105263158,
+     "f1": 0.9866666666666666,
+     "support": 76
+    },
+    "all excl. name": {
+     "precision": 1.0,
+     "recall": 0.9545454545454546,
+     "f1": 0.9767441860465117,
+     "support": 44
+    },
+    "inj:auditor-note": {
+     "precision": 1.0,
+     "recall": 0.9285714285714286,
+     "f1": 0.962962962962963,
+     "support": 28
+    },
+    "inj:consent-override": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 4
+    },
+    "inj:fake-json": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 12
+    },
+    "inj:foreign-language": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 8
+    },
+    "inj:ignore-instructions": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 5
+    },
+    "inj:marker-spoof": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 7
+    },
+    "inj:misattribution": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "inj:prefix-precheck": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 5
+    },
+    "inj:refusal-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 1
+    },
+    "inj:system-claim": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 3
+    },
+    "injection": {
+     "precision": 1.0,
+     "recall": 0.9736842105263158,
+     "f1": 0.9866666666666666,
+     "support": 76
+    },
+    "name only": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 32
+    },
+    "style:direct": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 27
+    },
+    "style:inferable": {
+     "precision": 1.0,
+     "recall": 0.9166666666666666,
+     "f1": 0.9565217391304348,
+     "support": 24
+    },
+    "style:paraphrase": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 25
+    }
+   },
+   "linkage": 0.9333333333333333,
+   "stage1_exit": 0.0,
+   "errors": 0,
+   "latency_mean": 15.010166666666667,
+   "latency_p95": 19.69
+  }
+ }
+}
