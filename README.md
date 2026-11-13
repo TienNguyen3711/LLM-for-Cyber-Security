@@ -410,3 +410,62 @@ On all 2025 events, floor + name raises F1 from 0.843 to 0.967 (4B) and from 0.9
   - The floor only catches values that appear **verbatim**. The synthetic injections never hide the value, so injection recall of 0.95–1.0 with the floor is an upper bound. A real attacker would combine injection with paraphrase. The floor does not replace a diverse injection experiment and a model-size sweep.
   - The `name` rule removes almost all F1 errors: most earlier errors were spurious `name` scores.
   - The dual scorer (maximum) *lowers* precision, because it inherits 4B's spurious fields. Not recommended without calibration.
+
+## Part 5: field-weight sensitivity (13/11/2026, `sensitivity.py`)
+
+The field weights are policy parameters (NIST SP 800-122 leaves the choice of impact factors to each organisation), so the oracle-scored conclusions are re-run under other weights on the same 10 seeded benches.
+
+**Decision (13/11/2026):** the main results (RQ1–RQ4, multi-seed and LLM tables) stay on the **baseline** weights. The AU 100-point weights are kept as a sensitivity configuration; the paper switches to them only if the anchor is needed later, which requires re-running `multiseed.py` and the LLM tables.
+
+
+```bash
+python3 sensitivity.py --draws 200   # ~7 min; writes results/sensitivity_weights.md and .json
+```
+
+- **AU 100-point anchor.** Weight = points / 100 under the Financial Transaction Reports Regulations 1990, so coverage 1.0 = the 100 points that identify a person (reg 3(2)).
+  - Date of birth, address, phone and Medicare each get 0.25, from reg 4(1)(c), (b), (d) and (g).
+  - Name and account number keep 0.10, because no reg-4 check scores them.
+  - Sources and open questions are in `Material/_ai_research/field-weights/` (notes, sources, gaps).
+- **Perturbations.** 200 local draws (each baseline weight × U(0.5, 1.5), renormalised to sum 1) and 200 global draws (Dirichlet(1,…,1), i.e. any ranking of fields), all at T = 0.75.
+- **Claims H1–H7.** Fixed in the script before the runs:
+  - H1: D3 prevents ≥ 20 pp more than D2.
+  - H2: D3 prevents ≥ 80% of cross-org campaigns.
+  - H3: D_traj FP is ≥ 50 pp above D3.
+  - H4: sum blocks ≥ 50 pp more overlap customers than or.
+  - H5: the crossing bit leaks ≥ 0.05 bits.
+  - H6: not sticky leaks less than sticky.
+  - H7: alert-only leaks ≤ half of D3.
+
+| weight set | D2 | D3 | D3 cross-org | D3 FP | overlap FP or / sum | MI D3 / not sticky / alert-only | claims |
+|---|---|---|---|---|---|---|---|
+| baseline, T = 0.75 | 19.4 | 71.8 | 97.1 | 7.9 | 6.7 / 100 | 0.238 / 0.139 / 0.016 | 7/7 |
+| AU 100-point, T = 0.75 (75 points) | 36.9 | 80.6 | 97.8 | 17.0 | 8.1 / 100 | 0.256 / 0.132 / 0.032 | 7/7 |
+| AU 100-point, T = 1.00 (100 points) | 0.0 | 47.4 | 74.7 | 1.0 | 2.4 / 100 | 0.107 / 0.097 / 0.000 | 6/7 (H2) |
+| equal weights, T = 0.75 | 0.0 | 62.1 | 96.2 | 3.6 | 3.8 / 100 | 0.362 / 0.325 / 0.000 | 7/7 |
+
+| claim | local draws | global draws |
+|---|---|---|
+| H1 D3 ≥ D2 + 20 pp | 100% | 90.0% (D3 > D2 in 100%) |
+| H2 D3 cross-org ≥ 80% | 100% | 100% |
+| H3 D_traj FP ≥ D3 FP + 50 pp | 100% | 96.5% |
+| H4 sum overlap FP ≥ or + 50 pp | 97.5% (sum > or in 100%) | 67.0% (sum > or in 98.5%) |
+| H5 crossing bit leaks ≥ 0.05 bits | 100% | 100% |
+| H6 not sticky < sticky | 100% | 100% |
+| H7 alert-only ≤ ½ D3 | 100% | 100% |
+
+### Reading the sensitivity results
+
+- **C1 (unit) and C3 (crossing bit) do not depend on the weights.**
+  - D3 beats D2 under every weight set.
+  - Cross-org prevention stays ≥ 84% (5th percentile), and the bit leaks under every weight set.
+  - Dropping sticky step-up always lowers leakage, and alert-only always nearly removes it.
+- **The AU 100-point anchor at T = 0.75 strengthens every result.** D3 prevents 80.6%. The cost is a higher benign FP (17.0% against 7.9%).
+  - At T = 1.00 the ledger waits until a person is already identifiable under the scheme. D3 then prevents only 47.4% (cross-org 74.7%).
+  - So the threshold should sit below the identification line. One 25-point item below it, T = 0.75, is a defensible policy reading.
+- **H4 (sum vs or) is the weight-dependent claim.**
+  - Sum still blocks more overlap customers than or in 98.5% of the global draws.
+  - The gap falls below 50 pp when one field dominates, or when the fields that overlapping organisations share are very light.
+  - In the paper, state the sum penalty as scaling with the weight of the shared fields.
+- **Caveats.**
+  - The benches are unchanged, so P1 probes still ask fields in ascending *baseline* weight.
+  - The Medicare → reg 4(1)(g) mapping and the currency of the 2005 point values need checking (`gaps.md`).
