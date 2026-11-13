@@ -1,0 +1,14 @@
+{
+ "qwen/qwen3-4b": {
+  "n": 20,
+  "mean_s": 1.83,
+  "median_s": 1.8,
+  "max_s": 2.7
+ },
+ "qwen/qwen3-32b": {
+  "n": 20,
+  "mean_s": 9.72,
+  "median_s": 10.05,
+  "max_s": 13.97
+ }
+}
