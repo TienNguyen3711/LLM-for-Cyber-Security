@@ -1,0 +1,6 @@
+# Large or private datasets stay out of git.
+data/
+.DS_Store
+__pycache__/
+.venv/
+logs/
